@@ -1,0 +1,200 @@
+Input file: data/raw/ncbi_vp_metadata.tsv
+File size: 594,521,031 bytes (567.0 MiB)
+Total lines: 400,315
+
+Header line:
+Assembly Accession	ANI Best ANI match ANI	ANI Best ANI match Assembly	ANI Best ANI match Assembly Coverage	ANI Best ANI match Type Category	ANI Best ANI match Organism	ANI Best ANI match Type Assembly Coverage	ANI Best match status	ANI Category	ANI Check status	ANI Comment	ANI Declared ANI match ANI	ANI Declared ANI match Assembly	ANI Declared ANI match Assembly Coverage	ANI Declared ANI match Type Category	ANI Declared ANI match Organism	ANI Declared ANI match Type Assembly Coverage	ANI Submitted organism	ANI Submitted species	Annotation BUSCO Complete	Annotation BUSCO Duplicated	Annotation BUSCO Fragmented	Annotation BUSCO Lineage	Annotation BUSCO Missing	Annotation BUSCO Single Copy	Annotation BUSCO Total Count	Annotation BUSCO Version	Annotation Count Gene Non-coding	Annotation Count Gene Other	Annotation Count Gene Protein-coding	Annotation Count Gene Pseudogene	Annotation Count Gene Total	Annotation Method	Annotation Name	Annotation Pipeline	Annotation Provider	Annotation Release Date	Annotation Report URL	Annotation Software Version	Annotation Status	Assembly Assembly Method	Assembly Atypical Is Atypical	Assembly Atypical Warnings	Assembly BioProject Accession	Assembly BioProject Lineage Accession	Assembly BioProject Lineage Parent Accession	Assembly BioProject Lineage Parent Accessions	Assembly BioProject Lineage Title	Assembly BioSample Accession	Assembly BioSample Age	Assembly BioSample Attribute Name	Assembly BioSample Attribute Value	Assembly BioSample Biomaterial provider	Assembly BioSample BioProject Accession	Assembly BioSample BioProject Parent Accession	Assembly BioSample BioProject Parent Accessions	Assembly BioSample BioProject Title	Assembly BioSample Breed	Assembly BioSample Collected by	Assembly BioSample Collection date	Assembly BioSample Cultivar	Assembly BioSample Description Comment	Assembly BioSample Description Organism Common Name	Assembly BioSample Description Organism Infraspecific Names Breed	Assembly BioSample Description Organism Infraspecific Names Cultivar	Assembly BioSample Description Organism Infraspecific Names Ecotype	Assembly BioSample Description Organism Infraspecific Names Isolate	Assembly BioSample Description Organism Infraspecific Names Sex	Assembly BioSample Description Organism Infraspecific Names Strain	Assembly BioSample Description Organism Name	Assembly BioSample Description Organism Pangolin Classification	Assembly BioSample Description Organism Taxonomic ID	Assembly BioSample Description Title	Assembly BioSample Development stage	Assembly BioSample Ecotype	Assembly BioSample Geographic location	Assembly BioSample Host	Assembly BioSample Host disease	Assembly BioSample Identified by	Assembly BioSample Sample Identifiers Database	Assembly BioSample Sample Identifiers Label	Assembly BioSample Sample Identifiers Value	Assembly BioSample IFSAC category	Assembly BioSample Isolate	Assembly BioSample Isolate name alias	Assembly BioSample Isolation source	Assembly BioSample Last updated	Assembly BioSample Latitude and Longitude	Assembly BioSample Models	Assembly BioSample Owner Contact Lab	Assembly BioSample Owner Name	Assembly BioSample Package	Assembly BioSample Project name	Assembly BioSample Publication date	Assembly BioSample Sample name	Assembly BioSample Serotype	Assembly BioSample Serovar	Assembly BioSample Sex	Assembly BioSample Source type	Assembly BioSample Status Status	Assembly BioSample Status When	Assembly BioSample Strain	Assembly BioSample Sub-species	Assembly BioSample Submission date	Assembly BioSample Tissue	Assembly Blast URL	Assembly Description	Assembly Diploid Role	Assembly Grouping Method	Assembly Level	Assembly Linked Assembly Accession	Assembly Linked Assembly Type	Assembly LongName	Assembly Name	Assembly Notes 	Assembly Paired Assembly Accession	Assembly Paired Assembly Changed	Assembly Paired Assembly Differences	Assembly Paired Assembly Manual Diff	Assembly Paired Assembly Name	Assembly Paired Assembly Only Genbank	Assembly Paired Assembly Only RefSeq	Assembly Paired Assembly RefSeq GenBank Are Different	Assembly Paired Assembly Status	Assembly Refseq Category	Assembly Release Date	Assembly Sequencing Tech	Assembly Status	Assembly Submitter	Assembly Suppression Reason	Assembly Synonym	Assembly Type	Assembly Stats ATGC Count	Assembly Stats Contig L50	Assembly Stats Contig N50	Assembly Stats Gaps Between Scaffolds Count	Assembly Stats GC Count	Assembly Stats GC Percent	Assembly Stats Genome Coverage	Assembly Stats Number of Component Sequences	Assembly Stats Number of Contigs	Assembly Stats Number of Organelles	Assembly Stats Number of Scaffolds	Assembly Stats Scaffold L50	Assembly Stats Scaffold N50	Assembly Stats Total Number of Chromosomes	Assembly Stats Total Sequence Length	Assembly Stats Total Ungapped Length	CheckM completeness	CheckM completeness percentile	CheckM contamination	CheckM marker set	CheckM marker set rank	CheckM species tax id	CheckM version	Current Accession	Organelle Assembly Name	Organelle BioProject Accessions	Organelle Description	Organelle Infraspecific Name	Organelle Submitter	Organelle Total Seq Length	Organism Common Name	Organism Infraspecific Names Breed	Organism Infraspecific Names Cultivar	Organism Infraspecific Names Ecotype	Organism Infraspecific Names Isolate	Organism Infraspecific Names Sex	Organism Infraspecific Names Strain	Organism Name	Organism Pangolin Classification	Organism Taxonomic ID	Source Database	Type Material Display Text	Type Material Label	WGS contigs URL	WGS project accession	WGS URL
+
+Column count: 178
+
+Column names:
+1. Assembly Accession
+2. ANI Best ANI match ANI
+3. ANI Best ANI match Assembly
+4. ANI Best ANI match Assembly Coverage
+5. ANI Best ANI match Type Category
+6. ANI Best ANI match Organism
+7. ANI Best ANI match Type Assembly Coverage
+8. ANI Best match status
+9. ANI Category
+10. ANI Check status
+11. ANI Comment
+12. ANI Declared ANI match ANI
+13. ANI Declared ANI match Assembly
+14. ANI Declared ANI match Assembly Coverage
+15. ANI Declared ANI match Type Category
+16. ANI Declared ANI match Organism
+17. ANI Declared ANI match Type Assembly Coverage
+18. ANI Submitted organism
+19. ANI Submitted species
+20. Annotation BUSCO Complete
+21. Annotation BUSCO Duplicated
+22. Annotation BUSCO Fragmented
+23. Annotation BUSCO Lineage
+24. Annotation BUSCO Missing
+25. Annotation BUSCO Single Copy
+26. Annotation BUSCO Total Count
+27. Annotation BUSCO Version
+28. Annotation Count Gene Non-coding
+29. Annotation Count Gene Other
+30. Annotation Count Gene Protein-coding
+31. Annotation Count Gene Pseudogene
+32. Annotation Count Gene Total
+33. Annotation Method
+34. Annotation Name
+35. Annotation Pipeline
+36. Annotation Provider
+37. Annotation Release Date
+38. Annotation Report URL
+39. Annotation Software Version
+40. Annotation Status
+41. Assembly Assembly Method
+42. Assembly Atypical Is Atypical
+43. Assembly Atypical Warnings
+44. Assembly BioProject Accession
+45. Assembly BioProject Lineage Accession
+46. Assembly BioProject Lineage Parent Accession
+47. Assembly BioProject Lineage Parent Accessions
+48. Assembly BioProject Lineage Title
+49. Assembly BioSample Accession
+50. Assembly BioSample Age
+51. Assembly BioSample Attribute Name
+52. Assembly BioSample Attribute Value
+53. Assembly BioSample Biomaterial provider
+54. Assembly BioSample BioProject Accession
+55. Assembly BioSample BioProject Parent Accession
+56. Assembly BioSample BioProject Parent Accessions
+57. Assembly BioSample BioProject Title
+58. Assembly BioSample Breed
+59. Assembly BioSample Collected by
+60. Assembly BioSample Collection date
+61. Assembly BioSample Cultivar
+62. Assembly BioSample Description Comment
+63. Assembly BioSample Description Organism Common Name
+64. Assembly BioSample Description Organism Infraspecific Names Breed
+65. Assembly BioSample Description Organism Infraspecific Names Cultivar
+66. Assembly BioSample Description Organism Infraspecific Names Ecotype
+67. Assembly BioSample Description Organism Infraspecific Names Isolate
+68. Assembly BioSample Description Organism Infraspecific Names Sex
+69. Assembly BioSample Description Organism Infraspecific Names Strain
+70. Assembly BioSample Description Organism Name
+71. Assembly BioSample Description Organism Pangolin Classification
+72. Assembly BioSample Description Organism Taxonomic ID
+73. Assembly BioSample Description Title
+74. Assembly BioSample Development stage
+75. Assembly BioSample Ecotype
+76. Assembly BioSample Geographic location
+77. Assembly BioSample Host
+78. Assembly BioSample Host disease
+79. Assembly BioSample Identified by
+80. Assembly BioSample Sample Identifiers Database
+81. Assembly BioSample Sample Identifiers Label
+82. Assembly BioSample Sample Identifiers Value
+83. Assembly BioSample IFSAC category
+84. Assembly BioSample Isolate
+85. Assembly BioSample Isolate name alias
+86. Assembly BioSample Isolation source
+87. Assembly BioSample Last updated
+88. Assembly BioSample Latitude and Longitude
+89. Assembly BioSample Models
+90. Assembly BioSample Owner Contact Lab
+91. Assembly BioSample Owner Name
+92. Assembly BioSample Package
+93. Assembly BioSample Project name
+94. Assembly BioSample Publication date
+95. Assembly BioSample Sample name
+96. Assembly BioSample Serotype
+97. Assembly BioSample Serovar
+98. Assembly BioSample Sex
+99. Assembly BioSample Source type
+100. Assembly BioSample Status Status
+101. Assembly BioSample Status When
+102. Assembly BioSample Strain
+103. Assembly BioSample Sub-species
+104. Assembly BioSample Submission date
+105. Assembly BioSample Tissue
+106. Assembly Blast URL
+107. Assembly Description
+108. Assembly Diploid Role
+109. Assembly Grouping Method
+110. Assembly Level
+111. Assembly Linked Assembly Accession
+112. Assembly Linked Assembly Type
+113. Assembly LongName
+114. Assembly Name
+115. Assembly Notes 
+116. Assembly Paired Assembly Accession
+117. Assembly Paired Assembly Changed
+118. Assembly Paired Assembly Differences
+119. Assembly Paired Assembly Manual Diff
+120. Assembly Paired Assembly Name
+121. Assembly Paired Assembly Only Genbank
+122. Assembly Paired Assembly Only RefSeq
+123. Assembly Paired Assembly RefSeq GenBank Are Different
+124. Assembly Paired Assembly Status
+125. Assembly Refseq Category
+126. Assembly Release Date
+127. Assembly Sequencing Tech
+128. Assembly Status
+129. Assembly Submitter
+130. Assembly Suppression Reason
+131. Assembly Synonym
+132. Assembly Type
+133. Assembly Stats ATGC Count
+134. Assembly Stats Contig L50
+135. Assembly Stats Contig N50
+136. Assembly Stats Gaps Between Scaffolds Count
+137. Assembly Stats GC Count
+138. Assembly Stats GC Percent
+139. Assembly Stats Genome Coverage
+140. Assembly Stats Number of Component Sequences
+141. Assembly Stats Number of Contigs
+142. Assembly Stats Number of Organelles
+143. Assembly Stats Number of Scaffolds
+144. Assembly Stats Scaffold L50
+145. Assembly Stats Scaffold N50
+146. Assembly Stats Total Number of Chromosomes
+147. Assembly Stats Total Sequence Length
+148. Assembly Stats Total Ungapped Length
+149. CheckM completeness
+150. CheckM completeness percentile
+151. CheckM contamination
+152. CheckM marker set
+153. CheckM marker set rank
+154. CheckM species tax id
+155. CheckM version
+156. Current Accession
+157. Organelle Assembly Name
+158. Organelle BioProject Accessions
+159. Organelle Description
+160. Organelle Infraspecific Name
+161. Organelle Submitter
+162. Organelle Total Seq Length
+163. Organism Common Name
+164. Organism Infraspecific Names Breed
+165. Organism Infraspecific Names Cultivar
+166. Organism Infraspecific Names Ecotype
+167. Organism Infraspecific Names Isolate
+168. Organism Infraspecific Names Sex
+169. Organism Infraspecific Names Strain
+170. Organism Name
+171. Organism Pangolin Classification
+172. Organism Taxonomic ID
+173. Source Database
+174. Type Material Display Text
+175. Type Material Label
+176. WGS contigs URL
+177. WGS project accession
+178. WGS URL
+
+First 5 data rows:
+--- Row 1 ---
+GCF_000706825.2	98.45	GCA_001558495.2	93.86	type	Vibrio parahaemolyticus	92.85	species_match	category_na	OK	na	98.45	GCA_001558495.2	93.86	type	Vibrio parahaemolyticus	92.85	Vibrio parahaemolyticus	Vibrio parahaemolyticus									112		4537	42	4691	Best-placed reference protein set; GeneMarkS-2+	GCF_000706825.2-RS_2026_01_01	NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	NCBI RefSeq	2026-01-01		6.10		ClC genome workbench v. 8			PRJNA245882	PRJNA245882		PRJNA245885	Vibrio parahaemolyticus GenomeTrakr - US Food and Drug Administration, Center for Food Safety and Applied Nutrition	SAMN02741349		strain	CFSAN001612		PRJNA245882					Not Provided	1990										Vibrio parahaemolyticus		670	Pathogen: clinical or host-associated sample from Vibrio parahaemolyticus			USA	Homo sapiens	missing			Sample name	CFSAN001612	clinical/research| human			Not Provided	2024-08-08T11:29:57.415	missing	Pathogen.cl		FDA/CFSAN	Pathogen.cl.1.0	GenomeTrakr	2014-04-30T00:00:00.000					human	live	2015-10-06T16:51:23	CFSAN001612		2014-04-30T10:59:34.710						Contig				ASM70682v2		GCA_000706825.2				NCBI Prokaryotic Genome Annotation Pipeline (PGAP)				current		2017-04-07	Illumina MiSeq	current	FDA/CFSAN			haploid	5097276	4	482345		2307566	45.5	118	33	33		33	4	482345		5097276	5097276	99.88	96.7333	0.6	Vibrio parahaemolyticus	species	670	v1.2.4	GCF_000706825.2													CFSAN001612	Vibrio parahaemolyticus		670	SOURCE_DATABASE_REFSEQ			https://www.ncbi.nlm.nih.gov/Traces/wgs/JNTX02	JNTX02	https://www.ncbi.nlm.nih.gov/nuccore/JNTX00000000.2
+--- Row 2 ---
+GCF_000706825.2	98.45	GCA_001558495.2	93.86	type	Vibrio parahaemolyticus	92.85	species_match	category_na	OK	na	98.45	GCA_001558495.2	93.86	type	Vibrio parahaemolyticus	92.85	Vibrio parahaemolyticus	Vibrio parahaemolyticus									112		4537	42	4691	Best-placed reference protein set; GeneMarkS-2+	GCF_000706825.2-RS_2026_01_01	NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	NCBI RefSeq	2026-01-01		6.10		ClC genome workbench v. 8			PRJNA245882	PRJNA245882		PRJNA245885	Vibrio parahaemolyticus GenomeTrakr - US Food and Drug Administration, Center for Food Safety and Applied Nutrition	SAMN02741349		strain	CFSAN001612		PRJNA245882					Not Provided	1990										Vibrio parahaemolyticus		670	Pathogen: clinical or host-associated sample from Vibrio parahaemolyticus			USA	Homo sapiens	missing		SRA		SRS599597	clinical/research| human			Not Provided	2024-08-08T11:29:57.415	missing	Pathogen.cl		FDA/CFSAN	Pathogen.cl.1.0	GenomeTrakr	2014-04-30T00:00:00.000					human	live	2015-10-06T16:51:23	CFSAN001612		2014-04-30T10:59:34.710						Contig				ASM70682v2		GCA_000706825.2				NCBI Prokaryotic Genome Annotation Pipeline (PGAP)				current		2017-04-07	Illumina MiSeq	current	FDA/CFSAN			haploid	5097276	4	482345		2307566	45.5	118	33	33		33	4	482345		5097276	5097276	99.88	96.7333	0.6	Vibrio parahaemolyticus	species	670	v1.2.4	GCF_000706825.2													CFSAN001612	Vibrio parahaemolyticus		670	SOURCE_DATABASE_REFSEQ			https://www.ncbi.nlm.nih.gov/Traces/wgs/JNTX02	JNTX02	https://www.ncbi.nlm.nih.gov/nuccore/JNTX00000000.2
+--- Row 3 ---
+GCF_000706825.2	98.45	GCA_001558495.2	93.86	type	Vibrio parahaemolyticus	92.85	species_match	category_na	OK	na	98.45	GCA_001558495.2	93.86	type	Vibrio parahaemolyticus	92.85	Vibrio parahaemolyticus	Vibrio parahaemolyticus									112		4537	42	4691	Best-placed reference protein set; GeneMarkS-2+	GCF_000706825.2-RS_2026_01_01	NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	NCBI RefSeq	2026-01-01		6.10		ClC genome workbench v. 8			PRJNA245882	PRJNA245882		PRJNA245885	Vibrio parahaemolyticus GenomeTrakr - US Food and Drug Administration, Center for Food Safety and Applied Nutrition	SAMN02741349		lat_lon	missing		PRJNA245882					Not Provided	1990										Vibrio parahaemolyticus		670	Pathogen: clinical or host-associated sample from Vibrio parahaemolyticus			USA	Homo sapiens	missing			Sample name	CFSAN001612	clinical/research| human			Not Provided	2024-08-08T11:29:57.415	missing	Pathogen.cl		FDA/CFSAN	Pathogen.cl.1.0	GenomeTrakr	2014-04-30T00:00:00.000					human	live	2015-10-06T16:51:23	CFSAN001612		2014-04-30T10:59:34.710						Contig				ASM70682v2		GCA_000706825.2				NCBI Prokaryotic Genome Annotation Pipeline (PGAP)				current		2017-04-07	Illumina MiSeq	current	FDA/CFSAN			haploid	5097276	4	482345		2307566	45.5	118	33	33		33	4	482345		5097276	5097276	99.88	96.7333	0.6	Vibrio parahaemolyticus	species	670	v1.2.4	GCF_000706825.2													CFSAN001612	Vibrio parahaemolyticus		670	SOURCE_DATABASE_REFSEQ			https://www.ncbi.nlm.nih.gov/Traces/wgs/JNTX02	JNTX02	https://www.ncbi.nlm.nih.gov/nuccore/JNTX00000000.2
+--- Row 4 ---
+GCF_000706825.2	98.45	GCA_001558495.2	93.86	type	Vibrio parahaemolyticus	92.85	species_match	category_na	OK	na	98.45	GCA_001558495.2	93.86	type	Vibrio parahaemolyticus	92.85	Vibrio parahaemolyticus	Vibrio parahaemolyticus									112		4537	42	4691	Best-placed reference protein set; GeneMarkS-2+	GCF_000706825.2-RS_2026_01_01	NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	NCBI RefSeq	2026-01-01		6.10		ClC genome workbench v. 8			PRJNA245882	PRJNA245882		PRJNA245885	Vibrio parahaemolyticus GenomeTrakr - US Food and Drug Administration, Center for Food Safety and Applied Nutrition	SAMN02741349		lat_lon	missing		PRJNA245882					Not Provided	1990										Vibrio parahaemolyticus		670	Pathogen: clinical or host-associated sample from Vibrio parahaemolyticus			USA	Homo sapiens	missing		SRA		SRS599597	clinical/research| human			Not Provided	2024-08-08T11:29:57.415	missing	Pathogen.cl		FDA/CFSAN	Pathogen.cl.1.0	GenomeTrakr	2014-04-30T00:00:00.000					human	live	2015-10-06T16:51:23	CFSAN001612		2014-04-30T10:59:34.710						Contig				ASM70682v2		GCA_000706825.2				NCBI Prokaryotic Genome Annotation Pipeline (PGAP)				current		2017-04-07	Illumina MiSeq	current	FDA/CFSAN			haploid	5097276	4	482345		2307566	45.5	118	33	33		33	4	482345		5097276	5097276	99.88	96.7333	0.6	Vibrio parahaemolyticus	species	670	v1.2.4	GCF_000706825.2													CFSAN001612	Vibrio parahaemolyticus		670	SOURCE_DATABASE_REFSEQ			https://www.ncbi.nlm.nih.gov/Traces/wgs/JNTX02	JNTX02	https://www.ncbi.nlm.nih.gov/nuccore/JNTX00000000.2
+--- Row 5 ---
+GCF_000706825.2	98.45	GCA_001558495.2	93.86	type	Vibrio parahaemolyticus	92.85	species_match	category_na	OK	na	98.45	GCA_001558495.2	93.86	type	Vibrio parahaemolyticus	92.85	Vibrio parahaemolyticus	Vibrio parahaemolyticus									112		4537	42	4691	Best-placed reference protein set; GeneMarkS-2+	GCF_000706825.2-RS_2026_01_01	NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	NCBI RefSeq	2026-01-01		6.10		ClC genome workbench v. 8			PRJNA245882	PRJNA245882		PRJNA245885	Vibrio parahaemolyticus GenomeTrakr - US Food and Drug Administration, Center for Food Safety and Applied Nutrition	SAMN02741349		collection_date	1990		PRJNA245882					Not Provided	1990										Vibrio parahaemolyticus		670	Pathogen: clinical or host-associated sample from Vibrio parahaemolyticus			USA	Homo sapiens	missing			Sample name	CFSAN001612	clinical/research| human			Not Provided	2024-08-08T11:29:57.415	missing	Pathogen.cl		FDA/CFSAN	Pathogen.cl.1.0	GenomeTrakr	2014-04-30T00:00:00.000					human	live	2015-10-06T16:51:23	CFSAN001612		2014-04-30T10:59:34.710						Contig				ASM70682v2		GCA_000706825.2				NCBI Prokaryotic Genome Annotation Pipeline (PGAP)				current		2017-04-07	Illumina MiSeq	current	FDA/CFSAN			haploid	5097276	4	482345		2307566	45.5	118	33	33		33	4	482345		5097276	5097276	99.88	96.7333	0.6	Vibrio parahaemolyticus	species	670	v1.2.4	GCF_000706825.2													CFSAN001612	Vibrio parahaemolyticus		670	SOURCE_DATABASE_REFSEQ			https://www.ncbi.nlm.nih.gov/Traces/wgs/JNTX02	JNTX02	https://www.ncbi.nlm.nih.gov/nuccore/JNTX00000000.2

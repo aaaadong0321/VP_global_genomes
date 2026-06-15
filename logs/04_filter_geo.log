@@ -1,0 +1,11 @@
+Input: /Users/guoxiaodong/Desktop/VP_global_genomes/data/processed/02_year_2019_onwards.tsv
+Primary geography column: Assembly BioSample Geographic location
+Fallback geography column: biosample_attr_geo_loc_name
+Input rows: 7,700
+Kept rows: 7,633
+Excluded rows: 67
+Kept unique Assembly Accession: 7,633
+Excluded unique Assembly Accession: 67
+Wrote: /Users/guoxiaodong/Desktop/VP_global_genomes/data/processed/03_geo_available.tsv
+Wrote: /Users/guoxiaodong/Desktop/VP_global_genomes/data/processed/03_geo_excluded.tsv
+Wrote: /Users/guoxiaodong/Desktop/VP_global_genomes/results/summary/08_geo_filter_summary.txt

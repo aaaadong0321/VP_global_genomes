@@ -1,0 +1,15 @@
+# Raw NCBI metadata packages (too large for GitHub)
+data/raw/ncbi_vp_metadata_package/
+data/raw/ncbi_vp_metadata.tsv
+data/raw/ncbi_assembly_packages/
+data/raw/ncbi_assemblies/
+
+# Genome files
+*.fna
+*.fasta
+*.fas
+*.fastq
+*.fastq.gz
+*.zip
+*.bam
+*.vcf

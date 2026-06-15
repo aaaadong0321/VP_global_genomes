@@ -1,0 +1,8 @@
+Input: /Users/guoxiaodong/Desktop/VP_global_genomes/data/raw/ncbi_vp_metadata.tsv
+Output: /Users/guoxiaodong/Desktop/VP_global_genomes/data/processed/00_metadata_one_row_per_assembly.tsv
+Loaded rows: 400,314
+Loaded columns: 178
+Collapsed rows: 19,546
+Collapsed columns: 387
+Unique Assembly Accession: 19,546
+Expanded BioSample attribute columns: 211

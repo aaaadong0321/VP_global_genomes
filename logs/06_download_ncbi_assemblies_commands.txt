@@ -1,0 +1,1 @@
+datasets download genome accession --inputfile "/Users/guoxiaodong/Desktop/VP_global_genomes/results/accession_lists/ncbi_2019_background_accessions.txt" --include genome --dehydrated --filename "/Users/guoxiaodong/Desktop/VP_global_genomes/data/raw/ncbi_assembly_packages/ncbi_2019_background_genomes.zip" --no-progressbar

@@ -1,0 +1,61 @@
+Geographic metadata availability filter summary
+Input file: /Users/guoxiaodong/Desktop/VP_global_genomes/data/processed/02_year_2019_onwards.tsv
+Primary geography column: Assembly BioSample Geographic location
+Fallback geography column: biosample_attr_geo_loc_name
+Input total rows: 7,700
+geo_location_final non-empty kept count: 7,633
+geo_location_final missing excluded count: 67
+Kept unique Assembly Accession count: 7,633
+Excluded unique Assembly Accession count: 67
+
+geo_location_final top 50 value counts:
+USA	1,644
+China	1,178
+China:Shanghai	659
+China:Huzhou	587
+USA:NJ	380
+New Zealand	344
+China: Guangdong	226
+China:Zhejiang	205
+China:Nantong	157
+China:Liaoning	144
+China: Changsha	94
+USA:MO	85
+Australia:South Australia	84
+USA:TX	82
+China:Shenzhen	80
+United Kingdom: United Kingdom	68
+Australia:Victoria	67
+Spain: Cadiz	60
+China:Guangzhou	55
+USA:WA	55
+China: Guangzhou	54
+China:Guangdong	38
+China: Fujian	36
+China: Shandong	36
+USA:California	36
+Germany	30
+Australia	29
+China: Jiaxing	28
+China: Jiangsu	28
+China: Wenzhou	28
+China: Zhejiang	27
+India	27
+United Kingdom: Norfolk	26
+Viet Nam	24
+Indonesia	24
+Viet Nam:Hanoi	24
+Australia: Victoria	23
+USA:MA	22
+China:Jiangsu	20
+China: Anhui Province, Xuancheng City	20
+China: Sichuan	19
+USA: Florida	18
+Korea: Gyeongsangnam-do	17
+China: Shanghai	16
+Thailand: Trang	16
+South Korea	16
+China: Shenzhen	16
+China: Guangdong, Shenzhen	16
+USA:SC	16
+China: Liaoning	16

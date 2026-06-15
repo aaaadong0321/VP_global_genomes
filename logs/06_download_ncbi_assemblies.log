@@ -1,0 +1,17 @@
+Project directory: /Users/guoxiaodong/Desktop/VP_global_genomes
+Run mode: dry-run
+Download mode: dehydrated
+datasets version: datasets version: 18.21.0
+
+NCBI 2019+ background pool: wrote 6061 assembly accession(s) to /Users/guoxiaodong/Desktop/VP_global_genomes/results/accession_lists/ncbi_2019_background_accessions.txt
+Skipping Pre-2019 ST50 supplement: input not found or empty: /Users/guoxiaodong/Desktop/VP_global_genomes/results/accession_lists/pre_2019_st50_accessions.tsv
+Skipping Extra ESR/NZ ST50 supplement: input not found or empty: /Users/guoxiaodong/Desktop/VP_global_genomes/results/accession_lists/esr_nz_st50_accessions_checked.tsv
+All NCBI download accessions: wrote 6061 unique accession(s) to /Users/guoxiaodong/Desktop/VP_global_genomes/results/accession_lists/ncbi_download_accessions_all.txt
+
+Dry-run NCBI 2019+ background pool: would download dehydrated package for 6061 accession(s) to /Users/guoxiaodong/Desktop/VP_global_genomes/data/raw/ncbi_assembly_packages/ncbi_2019_background_genomes.zip
+Skipping Pre-2019 ST50 supplement: no assembly accessions.
+Skipping Extra ESR/NZ ST50 supplement: no assembly accessions.
+
+Wrote command record: /Users/guoxiaodong/Desktop/VP_global_genomes/logs/06_download_ncbi_assemblies_commands.txt
+Wrote summary: /Users/guoxiaodong/Desktop/VP_global_genomes/results/summary/06_download_ncbi_assemblies_plan.txt
+Done.

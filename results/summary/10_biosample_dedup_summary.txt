@@ -1,0 +1,21 @@
+BioSample deduplication summary
+Input file: /Users/guoxiaodong/Desktop/VP_global_genomes/data/processed/03_geo_available.tsv
+Input total rows: 7,633
+Input unique BioSample count: 6,061
+Deduplicated kept rows: 6,061
+Removed duplicate rows: 1,572
+Deduplicated unique Assembly Accession count: 6,061
+Deduplicated unique BioSample count: 6,061
+
+Removed records Source Database counts:
+SOURCE_DATABASE_GENBANK	1,572
+
+Kept records Source Database counts:
+SOURCE_DATABASE_GENBANK	4,489
+SOURCE_DATABASE_REFSEQ	1,572
+
+Kept records Assembly Level counts:
+Contig	5,203
+Scaffold	752
+Complete Genome	85
+Chromosome	21

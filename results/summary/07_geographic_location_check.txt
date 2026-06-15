@@ -1,0 +1,130 @@
+Geographic location metadata check
+Input file: data/processed/02_year_2019_onwards.tsv
+Total rows: 7,700
+
+=== Assembly BioSample Geographic location ===
+Column exists: yes
+Non-missing count: 7,633
+Missing count: 67
+Unique non-missing values: 181
+Top 50 values and counts:
+USA	1,644
+China	1,178
+China:Shanghai	659
+China:Huzhou	587
+USA:NJ	380
+New Zealand	344
+China: Guangdong	226
+China:Zhejiang	205
+China:Nantong	157
+China:Liaoning	144
+China: Changsha	94
+USA:MO	85
+Australia:South Australia	84
+USA:TX	82
+China:Shenzhen	80
+United Kingdom: United Kingdom	68
+Australia:Victoria	67
+Spain: Cadiz	60
+China:Guangzhou	55
+USA:WA	55
+China: Guangzhou	54
+China:Guangdong	38
+China: Fujian	36
+China: Shandong	36
+USA:California	36
+Germany	30
+Australia	29
+China: Jiaxing	28
+China: Jiangsu	28
+China: Wenzhou	28
+China: Zhejiang	27
+India	27
+United Kingdom: Norfolk	26
+Not Provided	25
+Viet Nam	24
+Indonesia	24
+missing	24
+Viet Nam:Hanoi	24
+Australia: Victoria	23
+USA:MA	22
+China:Jiangsu	20
+China: Anhui Province, Xuancheng City	20
+China: Sichuan	19
+USA: Florida	18
+Korea: Gyeongsangnam-do	17
+China: Shanghai	16
+Thailand: Trang	16
+South Korea	16
+China: Shenzhen	16
+China: Guangdong, Shenzhen	16
+
+=== biosample_attr_geo_loc_name ===
+Column exists: yes
+Non-missing count: 7,633
+Missing count: 67
+Unique non-missing values: 181
+Top 50 values and counts:
+USA	1,644
+China	1,178
+China:Shanghai	659
+China:Huzhou	587
+USA:NJ	380
+New Zealand	344
+China: Guangdong	226
+China:Zhejiang	205
+China:Nantong	157
+China:Liaoning	144
+China: Changsha	94
+USA:MO	85
+Australia:South Australia	84
+USA:TX	82
+China:Shenzhen	80
+United Kingdom: United Kingdom	68
+Australia:Victoria	67
+Spain: Cadiz	60
+China:Guangzhou	55
+USA:WA	55
+China: Guangzhou	54
+China:Guangdong	38
+China: Fujian	36
+China: Shandong	36
+USA:California	36
+Germany	30
+Australia	29
+China: Jiaxing	28
+China: Jiangsu	28
+China: Wenzhou	28
+China: Zhejiang	27
+India	27
+United Kingdom: Norfolk	26
+Not Provided	25
+Viet Nam	24
+Indonesia	24
+missing	24
+Viet Nam:Hanoi	24
+Australia: Victoria	23
+USA:MA	22
+China:Jiangsu	20
+China: Anhui Province, Xuancheng City	20
+China: Sichuan	19
+USA: Florida	18
+Korea: Gyeongsangnam-do	17
+China: Shanghai	16
+Thailand: Trang	16
+South Korea	16
+China: Shenzhen	16
+China: Guangdong, Shenzhen	16
+
+=== biosample_attr_country ===
+Column exists: no
+
+=== biosample_attr_geographic_location ===
+Column exists: no
+
+=== Recommendation ===
+Recommended primary source for later country/region filtering: Assembly BioSample Geographic location
+Reason: exists with 7,633/7,700 non-missing rows and 181 unique non-missing values.
+This column is preferred because it is the main normalized NCBI BioSample geographic field and commonly stores country or country:region strings.
+Suggested fallback columns for missing/ambiguous records:
+- biosample_attr_geo_loc_name: 7,633 non-missing, 181 unique values

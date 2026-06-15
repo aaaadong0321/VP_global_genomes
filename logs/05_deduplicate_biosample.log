@@ -1,0 +1,7 @@
+Input: /Users/guoxiaodong/Desktop/VP_global_genomes/data/processed/03_geo_available.tsv
+Input rows: 7,633
+Kept rows: 6,061
+Removed duplicate rows: 1,572
+Wrote: /Users/guoxiaodong/Desktop/VP_global_genomes/data/processed/04_biosample_deduplicated.tsv
+Wrote: /Users/guoxiaodong/Desktop/VP_global_genomes/data/processed/04_biosample_duplicates_removed.tsv
+Wrote: /Users/guoxiaodong/Desktop/VP_global_genomes/results/summary/10_biosample_dedup_summary.txt

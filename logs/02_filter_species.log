@@ -1,0 +1,10 @@
+Input: /Users/guoxiaodong/Desktop/VP_global_genomes/data/processed/00_metadata_one_row_per_assembly.tsv
+Keep rule: ANI Submitted species == Vibrio parahaemolyticus
+Input rows: 19,546
+Kept rows: 19,546
+Excluded rows: 0
+Kept unique Assembly Accession: 19,546
+Excluded unique Assembly Accession: 0
+Wrote: /Users/guoxiaodong/Desktop/VP_global_genomes/data/processed/01_species_confirmed.tsv
+Wrote: /Users/guoxiaodong/Desktop/VP_global_genomes/data/processed/01_species_excluded.tsv
+Wrote: /Users/guoxiaodong/Desktop/VP_global_genomes/results/summary/04_species_filter_summary.txt

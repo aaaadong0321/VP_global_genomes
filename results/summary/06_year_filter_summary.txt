@@ -1,0 +1,19 @@
+Year filter summary: 2019 onwards
+Input file: /Users/guoxiaodong/Desktop/VP_global_genomes/data/processed/01_species_confirmed.tsv
+Input total rows: 19,546
+Successfully extracted year count: 18,318
+Unable to extract year count: 1,228
+year >= 2019 kept count: 7,700
+year < 2019 excluded count: 10,618
+Final kept unique Assembly Accession count: 7,700
+Final excluded unique Assembly Accession count: 11,846
+
+Kept genome count by extracted year:
+2019	1,170
+2020	1,106
+2021	1,600
+2022	1,043
+2023	1,287
+2024	872
+2025	530
+2026	92

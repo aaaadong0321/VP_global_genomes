@@ -1,0 +1,52 @@
+Assembly quality check
+Input file: data/processed/04_biosample_deduplicated.tsv
+Total rows: 6,061
+
+Assembly Level counts:
+Contig	5,203
+Scaffold	752
+Complete Genome	85
+Chromosome	21
+
+Assembly Status counts:
+current	5,408
+suppressed	653
+
+Assembly Atypical Is Atypical counts:
+<empty>	6,044
+true	17
+
+Assembly Atypical Warnings counts:
+<empty>	6,044
+contaminated	10
+genome length too large	5
+unverified source organism	2
+
+Assembly Stats Total Sequence Length numeric summary:
+min	4482825
+median	5242769
+mean	5307231.38
+max	8575466
+
+Assembly Stats Number of Contigs numeric summary:
+min	2
+median	55
+mean	75.54
+max	2808
+
+Assembly Stats Contig N50 numeric summary:
+min	2453
+median	373859
+mean	416765.52
+max	3691364
+
+CheckM completeness missingness:
+non-missing	2,444
+missing	3,617
+
+CheckM contamination missingness:
+non-missing	2,444
+missing	3,617
+
+Records with total sequence length <4 Mb or >7 Mb:	1
+Records with contig number >500:	37

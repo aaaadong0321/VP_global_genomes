@@ -1,0 +1,33 @@
+Species confirmation filter summary
+Input file: /Users/guoxiaodong/Desktop/VP_global_genomes/data/processed/00_metadata_one_row_per_assembly.tsv
+Keep rule: ANI Submitted species == Vibrio parahaemolyticus
+Input total rows: 19,546
+Kept rows: 19,546
+Excluded rows: 0
+Kept unique Assembly Accession count: 19,546
+Excluded unique Assembly Accession count: 0
+
+ANI Submitted species value counts:
+Vibrio parahaemolyticus	19,546
+
+Organism Name top 20 value counts:
+Vibrio parahaemolyticus	18,947
+Vibrio parahaemolyticus 10290	95
+Vibrio parahaemolyticus AQ3810	4
+Vibrio parahaemolyticus 10329	4
+Vibrio parahaemolyticus O1	3
+Vibrio parahaemolyticus Peru-466	2
+Vibrio parahaemolyticus AQ4037	2
+Vibrio parahaemolyticus AN-5034	2
+Vibrio parahaemolyticus K5030	2
+Vibrio parahaemolyticus RIMD 2210633	2
+Vibrio parahaemolyticus SNUVpS-1	2
+Vibrio parahaemolyticus BB22OP	2
+Vibrio parahaemolyticus PCV08-7	2
+Vibrio parahaemolyticus v110	2
+Vibrio parahaemolyticus O1:Kuk str. FDA_R31	2
+Vibrio parahaemolyticus O1:K33 str. CDC_K4557	2
+Vibrio parahaemolyticus 3259	2
+Vibrio parahaemolyticus NIHCB0603	2
+Vibrio parahaemolyticus 949	2
+Vibrio parahaemolyticus NIHCB0757	2

@@ -1,0 +1,21 @@
+cd /Users/guoxiaodong/Desktop/VP_global_genomes
+df -h .
+datasets download genome taxon 670 --include none --filename data/raw/ncbi_vp_metadata_package.zip
+# retry after initial sandbox DNS failure
+datasets download genome taxon 670 --include none --filename data/raw/ncbi_vp_metadata_package.zip
+ls -lh data/raw/ncbi_vp_metadata_package.zip
+unzip -q data/raw/ncbi_vp_metadata_package.zip -d data/raw/ncbi_vp_metadata_package/
+find data/raw/ncbi_vp_metadata_package -maxdepth 3 -print | sort
+dataformat tsv genome --help
+dataformat tsv genome --inputfile data/raw/ncbi_vp_metadata_package/ncbi_dataset/data/assembly_data_report.jsonl > data/raw/ncbi_vp_metadata.tsv
+ls -lh data/raw/ncbi_vp_metadata.tsv
+wc -l data/raw/ncbi_vp_metadata.tsv
+head -1 data/raw/ncbi_vp_metadata.tsv
+python - <<PY > results/summary/01_metadata_structure.txt 2>> logs/00_download_metadata.log
+# structure inspection for data/raw/ncbi_vp_metadata.tsv
+PY
+cat results/summary/01_metadata_structure.txt
+python - <<'PY' > results/summary/02_metadata_duplicate_structure.txt 2>> logs/00_download_metadata.log
+# duplicate structure inspection for data/raw/ncbi_vp_metadata.tsv
+PY
+cat results/summary/02_metadata_duplicate_structure.txt

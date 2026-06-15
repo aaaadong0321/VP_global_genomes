@@ -1,0 +1,10 @@
+Input: /Users/guoxiaodong/Desktop/VP_global_genomes/data/processed/01_species_confirmed.tsv
+Keep rule: extracted collection year >= 2019
+Input rows: 19,546
+Successfully extracted year: 18,318
+Unable to extract year: 1,228
+Kept year >= 2019: 7,700
+Excluded year < 2019: 10,618
+Wrote: /Users/guoxiaodong/Desktop/VP_global_genomes/data/processed/02_year_2019_onwards.tsv
+Wrote: /Users/guoxiaodong/Desktop/VP_global_genomes/data/processed/02_year_excluded.tsv
+Wrote: /Users/guoxiaodong/Desktop/VP_global_genomes/results/summary/06_year_filter_summary.txt

@@ -1,0 +1,19 @@
+Duplicate structure check for NCBI VP metadata TSV
+Input file: data/raw/ncbi_vp_metadata.tsv
+Total data rows excluding header: 400,314
+Unique Assembly Accession count: 19,546
+Unique Current Accession count: 19,546
+Unique Assembly BioSample Accession count: 15,235
+Average rows per Assembly Accession: 20.48
+
+Top 10 Assembly Accessions by row count:
+1. GCA_021703735.1	180 rows
+2. GCA_021703795.1	180 rows
+3. GCA_021703815.1	180 rows
+4. GCA_021703835.1	180 rows
+5. GCA_021703855.1	180 rows
+6. GCA_021703955.1	180 rows
+7. GCA_021704415.1	180 rows
+8. GCA_015803695.1	144 rows
+9. GCA_015803955.1	144 rows
+10. GCA_015803975.1	144 rows
