@@ -2,15 +2,19 @@ NCBI assembly download plan
 
 Run mode: dry-run
 Download mode: dehydrated
-Batch size: 500
+Batch size: 10
+Max accessions per input list: 10
+Run label: test_10
 datasets version: datasets version: 18.21.0
 
-| Dataset | Input | Accession list | Count | ZIP output | Unpack directory | Flat FASTA directory |
-|---|---|---|---:|---|---|---|
-| NCBI 2019+ background pool | /Users/guoxiaodong/Desktop/VP_global_genomes/data/processed/04_biosample_deduplicated.tsv | /Users/guoxiaodong/Desktop/VP_global_genomes/results/accession_lists/ncbi_2019_background_accessions.txt | 6061 | /Users/guoxiaodong/Desktop/VP_global_genomes/data/raw/ncbi_assembly_packages/ncbi_2019_background_genomes.zip | /Users/guoxiaodong/Desktop/VP_global_genomes/data/raw/ncbi_assemblies/ncbi_2019_background | /Users/guoxiaodong/Desktop/VP_global_genomes/data/raw/ncbi_assemblies_flat/ncbi_2019_background |
-| Pre-2019 ST50 supplement | /Users/guoxiaodong/Desktop/VP_global_genomes/results/accession_lists/pre_2019_st50_accessions.tsv | /Users/guoxiaodong/Desktop/VP_global_genomes/results/accession_lists/pre_2019_st50_download_accessions.txt | 0 | /Users/guoxiaodong/Desktop/VP_global_genomes/data/raw/ncbi_assembly_packages/pre_2019_st50_genomes.zip | /Users/guoxiaodong/Desktop/VP_global_genomes/data/raw/ncbi_assemblies/pre_2019_st50 | /Users/guoxiaodong/Desktop/VP_global_genomes/data/raw/ncbi_assemblies_flat/pre_2019_st50 |
-| Extra ESR/NZ ST50 supplement | /Users/guoxiaodong/Desktop/VP_global_genomes/results/accession_lists/esr_nz_st50_accessions_checked.tsv | /Users/guoxiaodong/Desktop/VP_global_genomes/results/accession_lists/extra_st50_download_accessions.txt | 0 | /Users/guoxiaodong/Desktop/VP_global_genomes/data/raw/ncbi_assembly_packages/extra_st50_genomes.zip | /Users/guoxiaodong/Desktop/VP_global_genomes/data/raw/ncbi_assemblies/extra_st50 | /Users/guoxiaodong/Desktop/VP_global_genomes/data/raw/ncbi_assemblies_flat/extra_st50 |
-| All NCBI accessions | combined | /Users/guoxiaodong/Desktop/VP_global_genomes/results/accession_lists/ncbi_download_accessions_all.txt | 6061 | packages above | /Users/guoxiaodong/Desktop/VP_global_genomes/data/raw/ncbi_assemblies | /Users/guoxiaodong/Desktop/VP_global_genomes/data/raw/ncbi_assemblies_flat |
+| Dataset | Input | Full accession list | Full count | This-run accession list | This-run count | ZIP output | Unpack directory | Flat FASTA directory |
+|---|---|---|---:|---|---:|---|---|---|
+| NCBI 2019+ background pool | /Users/guoxiaodong/Desktop/VP_global_genomes/data/processed/04_biosample_deduplicated.tsv | /Users/guoxiaodong/Desktop/VP_global_genomes/results/accession_lists/ncbi_2019_background_accessions.txt | 6061 | /Users/guoxiaodong/Desktop/VP_global_genomes/results/accession_lists/download_inputs/ncbi_2019_background_accessions_to_download.txt | 10 | /Users/guoxiaodong/Desktop/VP_global_genomes/data/raw/ncbi_assembly_packages/ncbi_2019_background_genomes_test_10.zip | /Users/guoxiaodong/Desktop/VP_global_genomes/data/raw/ncbi_assemblies/ncbi_2019_background | /Users/guoxiaodong/Desktop/VP_global_genomes/data/raw/ncbi_assemblies_flat/ncbi_2019_background |
+| Pre-2019 ST50 supplement | /Users/guoxiaodong/Desktop/VP_global_genomes/results/accession_lists/pre_2019_st50_accessions.tsv | /Users/guoxiaodong/Desktop/VP_global_genomes/results/accession_lists/pre_2019_st50_download_accessions.txt | 0 | /Users/guoxiaodong/Desktop/VP_global_genomes/results/accession_lists/download_inputs/pre_2019_st50_accessions_to_download.txt | 0 | /Users/guoxiaodong/Desktop/VP_global_genomes/data/raw/ncbi_assembly_packages/pre_2019_st50_genomes_test_10.zip | /Users/guoxiaodong/Desktop/VP_global_genomes/data/raw/ncbi_assemblies/pre_2019_st50 | /Users/guoxiaodong/Desktop/VP_global_genomes/data/raw/ncbi_assemblies_flat/pre_2019_st50 |
+| Extra ESR/NZ ST50 supplement | /Users/guoxiaodong/Desktop/VP_global_genomes/results/accession_lists/esr_nz_st50_accessions_checked.tsv | /Users/guoxiaodong/Desktop/VP_global_genomes/results/accession_lists/extra_st50_download_accessions.txt | 0 | /Users/guoxiaodong/Desktop/VP_global_genomes/results/accession_lists/download_inputs/extra_st50_accessions_to_download.txt | 0 | /Users/guoxiaodong/Desktop/VP_global_genomes/data/raw/ncbi_assembly_packages/extra_st50_genomes_test_10.zip | /Users/guoxiaodong/Desktop/VP_global_genomes/data/raw/ncbi_assemblies/extra_st50 | /Users/guoxiaodong/Desktop/VP_global_genomes/data/raw/ncbi_assemblies_flat/extra_st50 |
+| All NCBI accessions | combined | /Users/guoxiaodong/Desktop/VP_global_genomes/results/accession_lists/ncbi_download_accessions_all.txt | 6061 | /Users/guoxiaodong/Desktop/VP_global_genomes/results/accession_lists/download_inputs/ncbi_accessions_to_download_all.txt | 10 | packages above | /Users/guoxiaodong/Desktop/VP_global_genomes/data/raw/ncbi_assemblies | /Users/guoxiaodong/Desktop/VP_global_genomes/data/raw/ncbi_assemblies_flat |
+
+Already downloaded accession scan: /Users/guoxiaodong/Desktop/VP_global_genomes/results/accession_lists/downloaded_accessions_existing.txt
 
 Flat FASTA manifests, when --unpack or --flatten is used:
 - /Users/guoxiaodong/Desktop/VP_global_genomes/results/accession_lists/ncbi_2019_background_fasta_manifest.tsv
