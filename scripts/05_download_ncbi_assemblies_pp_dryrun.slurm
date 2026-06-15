@@ -10,6 +10,7 @@ set -euo pipefail
 PROJECT_DIR="/workspace/hraxxg/Vp_global_library"
 CONDA_SH="/software/miniforge/24.1.2/etc/profile.d/conda.sh"
 CONDA_ENV="/workspace/hraxxg/conda-envs/datasets"
+BATCH_SIZE="${BATCH_SIZE:-500}"
 
 source "${CONDA_SH}"
 conda activate "${CONDA_ENV}"
@@ -24,4 +25,4 @@ mkdir -p "${PROJECT_DIR}/data/raw/ncbi_assembly_packages" \
          "${PROJECT_DIR}/results/accession_lists" \
          "${PROJECT_DIR}/results/summary"
 
-bash "${PROJECT_DIR}/scripts/05_download_ncbi_assemblies.sh"
+bash "${PROJECT_DIR}/scripts/05_download_ncbi_assemblies.sh" --batch-size "${BATCH_SIZE}"

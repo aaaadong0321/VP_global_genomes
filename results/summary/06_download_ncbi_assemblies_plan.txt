@@ -2,6 +2,7 @@ NCBI assembly download plan
 
 Run mode: dry-run
 Download mode: dehydrated
+Batch size: 500
 datasets version: datasets version: 18.21.0
 
 | Dataset | Input | Accession list | Count | ZIP output | Unpack directory | Flat FASTA directory |

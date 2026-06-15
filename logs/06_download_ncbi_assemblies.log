@@ -1,6 +1,7 @@
 Project directory: /Users/guoxiaodong/Desktop/VP_global_genomes
 Run mode: dry-run
 Download mode: dehydrated
+Batch size: 500
 datasets version: datasets version: 18.21.0
 
 NCBI 2019+ background pool: wrote 6061 assembly accession(s) to /Users/guoxiaodong/Desktop/VP_global_genomes/results/accession_lists/ncbi_2019_background_accessions.txt
@@ -8,7 +9,20 @@ Skipping Pre-2019 ST50 supplement: input not found or empty: /Users/guoxiaodong/
 Skipping Extra ESR/NZ ST50 supplement: input not found or empty: /Users/guoxiaodong/Desktop/VP_global_genomes/results/accession_lists/esr_nz_st50_accessions_checked.tsv
 All NCBI download accessions: wrote 6061 unique accession(s) to /Users/guoxiaodong/Desktop/VP_global_genomes/results/accession_lists/ncbi_download_accessions_all.txt
 
-Dry-run NCBI 2019+ background pool: would download dehydrated package for 6061 accession(s) to /Users/guoxiaodong/Desktop/VP_global_genomes/data/raw/ncbi_assembly_packages/ncbi_2019_background_genomes.zip
+Split 6061 accession(s) into 13 batch file(s): /Users/guoxiaodong/Desktop/VP_global_genomes/results/accession_lists/download_batches/ncbi_2019_background_genomes
+Dry-run NCBI 2019+ background pool batch_001: would download dehydrated package for 500 accession(s) to /Users/guoxiaodong/Desktop/VP_global_genomes/data/raw/ncbi_assembly_packages/ncbi_2019_background_genomes_batch_001.zip
+Dry-run NCBI 2019+ background pool batch_002: would download dehydrated package for 500 accession(s) to /Users/guoxiaodong/Desktop/VP_global_genomes/data/raw/ncbi_assembly_packages/ncbi_2019_background_genomes_batch_002.zip
+Dry-run NCBI 2019+ background pool batch_003: would download dehydrated package for 500 accession(s) to /Users/guoxiaodong/Desktop/VP_global_genomes/data/raw/ncbi_assembly_packages/ncbi_2019_background_genomes_batch_003.zip
+Dry-run NCBI 2019+ background pool batch_004: would download dehydrated package for 500 accession(s) to /Users/guoxiaodong/Desktop/VP_global_genomes/data/raw/ncbi_assembly_packages/ncbi_2019_background_genomes_batch_004.zip
+Dry-run NCBI 2019+ background pool batch_005: would download dehydrated package for 500 accession(s) to /Users/guoxiaodong/Desktop/VP_global_genomes/data/raw/ncbi_assembly_packages/ncbi_2019_background_genomes_batch_005.zip
+Dry-run NCBI 2019+ background pool batch_006: would download dehydrated package for 500 accession(s) to /Users/guoxiaodong/Desktop/VP_global_genomes/data/raw/ncbi_assembly_packages/ncbi_2019_background_genomes_batch_006.zip
+Dry-run NCBI 2019+ background pool batch_007: would download dehydrated package for 500 accession(s) to /Users/guoxiaodong/Desktop/VP_global_genomes/data/raw/ncbi_assembly_packages/ncbi_2019_background_genomes_batch_007.zip
+Dry-run NCBI 2019+ background pool batch_008: would download dehydrated package for 500 accession(s) to /Users/guoxiaodong/Desktop/VP_global_genomes/data/raw/ncbi_assembly_packages/ncbi_2019_background_genomes_batch_008.zip
+Dry-run NCBI 2019+ background pool batch_009: would download dehydrated package for 500 accession(s) to /Users/guoxiaodong/Desktop/VP_global_genomes/data/raw/ncbi_assembly_packages/ncbi_2019_background_genomes_batch_009.zip
+Dry-run NCBI 2019+ background pool batch_010: would download dehydrated package for 500 accession(s) to /Users/guoxiaodong/Desktop/VP_global_genomes/data/raw/ncbi_assembly_packages/ncbi_2019_background_genomes_batch_010.zip
+Dry-run NCBI 2019+ background pool batch_011: would download dehydrated package for 500 accession(s) to /Users/guoxiaodong/Desktop/VP_global_genomes/data/raw/ncbi_assembly_packages/ncbi_2019_background_genomes_batch_011.zip
+Dry-run NCBI 2019+ background pool batch_012: would download dehydrated package for 500 accession(s) to /Users/guoxiaodong/Desktop/VP_global_genomes/data/raw/ncbi_assembly_packages/ncbi_2019_background_genomes_batch_012.zip
+Dry-run NCBI 2019+ background pool batch_013: would download dehydrated package for 61 accession(s) to /Users/guoxiaodong/Desktop/VP_global_genomes/data/raw/ncbi_assembly_packages/ncbi_2019_background_genomes_batch_013.zip
 Skipping Pre-2019 ST50 supplement: no assembly accessions.
 Skipping Extra ESR/NZ ST50 supplement: no assembly accessions.
 

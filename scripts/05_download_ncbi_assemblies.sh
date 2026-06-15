@@ -7,7 +7,9 @@ set -euo pipefail
 # Default mode is dry-run: generate accession lists and command records, but do
 # not download large genome packages unless --run is supplied. Genome packages
 # use NCBI Datasets dehydrated mode by default so large downloads can be
-# rehydrated/resumed more safely than a single direct ZIP download.
+# rehydrated/resumed more safely than a single direct ZIP download. Large
+# accession lists are split into batches by default to avoid one oversized NCBI
+# Datasets request.
 
 PROJECT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 
@@ -21,6 +23,7 @@ LOG_DIR="${PROJECT_DIR}/logs"
 PACKAGE_DIR="${PROJECT_DIR}/data/raw/ncbi_assembly_packages"
 UNPACK_DIR="${PROJECT_DIR}/data/raw/ncbi_assemblies"
 FLAT_FASTA_DIR="${PROJECT_DIR}/data/raw/ncbi_assemblies_flat"
+BATCH_DIR="${ACCESSION_DIR}/download_batches"
 
 BACKGROUND_ACCESSIONS="${ACCESSION_DIR}/ncbi_2019_background_accessions.txt"
 PRE2019_ST50_ACCESSIONS="${ACCESSION_DIR}/pre_2019_st50_download_accessions.txt"
@@ -39,10 +42,11 @@ RUN_DOWNLOAD=0
 UNPACK=0
 DEHYDRATED=1
 FLATTEN=0
+BATCH_SIZE=500
 
 usage() {
   cat <<EOF
-Usage: $(basename "$0") [--run] [--unpack] [--flatten] [--direct]
+Usage: $(basename "$0") [--run] [--unpack] [--flatten] [--direct] [--batch-size N] [--no-batch]
 
 Default: dry-run only. The script creates accession lists and records the exact
 datasets commands that would be used, but does not download genome FASTA files.
@@ -53,6 +57,10 @@ Options:
               validate FASTA counts, and create flat FASTA symlinks.
   --flatten   Create/update flat FASTA symlinks from already unpacked data.
   --direct    Use direct genome ZIP downloads instead of dehydrated mode.
+  --batch-size N
+              Split accession lists into batches of N before downloading.
+              Default: ${BATCH_SIZE}.
+  --no-batch  Download each accession list as a single NCBI Datasets request.
   -h, --help  Show this help message.
 
 Inputs:
@@ -91,6 +99,18 @@ while [[ $# -gt 0 ]]; do
       DEHYDRATED=0
       shift
       ;;
+    --batch-size)
+      if [[ $# -lt 2 || ! "$2" =~ ^[0-9]+$ || "$2" == "0" ]]; then
+        echo "ERROR: --batch-size requires a positive integer" >&2
+        exit 2
+      fi
+      BATCH_SIZE="$2"
+      shift 2
+      ;;
+    --no-batch)
+      BATCH_SIZE=0
+      shift
+      ;;
     -h|--help)
       usage
       exit 0
@@ -103,7 +123,7 @@ while [[ $# -gt 0 ]]; do
   esac
 done
 
-mkdir -p "${ACCESSION_DIR}" "${SUMMARY_DIR}" "${LOG_DIR}" "${PACKAGE_DIR}" "${UNPACK_DIR}"
+mkdir -p "${ACCESSION_DIR}" "${SUMMARY_DIR}" "${LOG_DIR}" "${PACKAGE_DIR}" "${UNPACK_DIR}" "${BATCH_DIR}"
 : > "${LOG_FILE}"
 : > "${COMMAND_FILE}"
 : > "${SUMMARY_FILE}"
@@ -167,17 +187,51 @@ extract_accessions() {
   log "${label}: wrote ${count} assembly accession(s) to ${output}"
 }
 
-download_package() {
+batch_dir_for_zip() {
+  local zip_file="$1"
+  local base
+  base="$(basename "${zip_file%.zip}")"
+  printf '%s/%s\n' "${BATCH_DIR}" "${base}"
+}
+
+batch_zip_for_file() {
+  local zip_file="$1"
+  local batch_file="$2"
+  local batch_name
+  batch_name="$(basename "${batch_file%.txt}")"
+  printf '%s_%s.zip\n' "${zip_file%.zip}" "${batch_name}"
+}
+
+split_accessions() {
+  local accession_file="$1"
+  local zip_file="$2"
+  local count="$3"
+
+  local batch_dir
+  batch_dir="$(batch_dir_for_zip "${zip_file}")"
+  rm -rf "${batch_dir}"
+  mkdir -p "${batch_dir}"
+
+  awk -v n="${BATCH_SIZE}" -v out_dir="${batch_dir}" '
+    NF {
+      batch = int((NR - 1) / n) + 1
+      file = sprintf("%s/batch_%03d.txt", out_dir, batch)
+      print $0 > file
+    }
+  ' "${accession_file}"
+
+  local batch_count
+  batch_count="$(find "${batch_dir}" -type f -name 'batch_*.txt' | wc -l | tr -d ' ')"
+  log "Split ${count} accession(s) into ${batch_count} batch file(s): ${batch_dir}"
+}
+
+run_datasets_download() {
   local label="$1"
   local accession_file="$2"
   local zip_file="$3"
 
   local count
   count="$(wc -l < "${accession_file}" | tr -d ' ')"
-  if [[ "${count}" == "0" ]]; then
-    log "Skipping ${label}: no assembly accessions."
-    return 0
-  fi
 
   local cmd
   if [[ "${DEHYDRATED}" == "1" ]]; then
@@ -188,6 +242,10 @@ download_package() {
   record_command "${cmd}"
 
   if [[ "${RUN_DOWNLOAD}" == "1" ]]; then
+    if [[ -s "${zip_file}" ]]; then
+      log "Skipping existing package for ${label}: ${zip_file}"
+      return 0
+    fi
     log "Downloading ${label}: ${count} accession(s)"
     if [[ "${DEHYDRATED}" == "1" ]]; then
       datasets download genome accession --inputfile "${accession_file}" --include genome --dehydrated --filename "${zip_file}" --no-progressbar 2>&1 | tee -a "${LOG_FILE}"
@@ -203,7 +261,35 @@ download_package() {
   fi
 }
 
-unpack_package() {
+download_package() {
+  local label="$1"
+  local accession_file="$2"
+  local zip_file="$3"
+
+  local count
+  count="$(wc -l < "${accession_file}" | tr -d ' ')"
+  if [[ "${count}" == "0" ]]; then
+    log "Skipping ${label}: no assembly accessions."
+    return 0
+  fi
+
+  if [[ "${BATCH_SIZE}" -gt 0 && "${count}" -gt "${BATCH_SIZE}" ]]; then
+    split_accessions "${accession_file}" "${zip_file}" "${count}"
+    local batch_file
+    for batch_file in "$(batch_dir_for_zip "${zip_file}")"/batch_*.txt; do
+      [[ -s "${batch_file}" ]] || continue
+      local batch_zip
+      local batch_name
+      batch_zip="$(batch_zip_for_file "${zip_file}" "${batch_file}")"
+      batch_name="$(basename "${batch_file%.txt}")"
+      run_datasets_download "${label} ${batch_name}" "${batch_file}" "${batch_zip}"
+    done
+  else
+    run_datasets_download "${label}" "${accession_file}" "${zip_file}"
+  fi
+}
+
+unpack_one_package() {
   local label="$1"
   local zip_file="$2"
   local out_dir="$3"
@@ -219,10 +305,30 @@ unpack_package() {
 
   if [[ "${DEHYDRATED}" == "1" ]]; then
     local cmd
-    cmd="datasets rehydrate --directory \"${out_dir}\""
+    cmd="datasets rehydrate --directory \"${out_dir}\" --no-progressbar"
     record_command "${cmd}"
     log "Rehydrating ${label} in ${out_dir}"
-    datasets rehydrate --directory "${out_dir}" 2>&1 | tee -a "${LOG_FILE}"
+    datasets rehydrate --directory "${out_dir}" --no-progressbar 2>&1 | tee -a "${LOG_FILE}"
+  fi
+}
+
+unpack_package() {
+  local label="$1"
+  local zip_file="$2"
+  local out_dir="$3"
+
+  local found_batch=0
+  local batch_zip
+  for batch_zip in "${zip_file%.zip}"_batch_*.zip; do
+    [[ -s "${batch_zip}" ]] || continue
+    found_batch=1
+    local batch_name
+    batch_name="$(basename "${batch_zip%.zip}")"
+    unpack_one_package "${label} ${batch_name}" "${batch_zip}" "${out_dir}/${batch_name}"
+  done
+
+  if [[ "${found_batch}" == "0" ]]; then
+    unpack_one_package "${label}" "${zip_file}" "${out_dir}"
   fi
 }
 
@@ -307,19 +413,20 @@ flatten_fastas() {
 
 require_command datasets
 require_command awk
+require_command find
 require_command sort
 require_command wc
 if [[ "${UNPACK}" == "1" ]]; then
   require_command unzip
 fi
 if [[ "${UNPACK}" == "1" || "${FLATTEN}" == "1" ]]; then
-  require_command find
   require_command ln
 fi
 
 log "Project directory: ${PROJECT_DIR}"
 log "Run mode: $([[ "${RUN_DOWNLOAD}" == "1" ]] && echo "download" || echo "dry-run")"
 log "Download mode: $([[ "${DEHYDRATED}" == "1" ]] && echo "dehydrated" || echo "direct ZIP")"
+log "Batch size: $([[ "${BATCH_SIZE}" == "0" ]] && echo "disabled" || echo "${BATCH_SIZE}")"
 log "datasets version: $(datasets --version 2>/dev/null || echo 'unknown')"
 log ""
 
@@ -358,6 +465,7 @@ fi
   echo
   echo "Run mode: $([[ "${RUN_DOWNLOAD}" == "1" ]] && echo "download" || echo "dry-run")"
   echo "Download mode: $([[ "${DEHYDRATED}" == "1" ]] && echo "dehydrated" || echo "direct ZIP")"
+  echo "Batch size: $([[ "${BATCH_SIZE}" == "0" ]] && echo "disabled" || echo "${BATCH_SIZE}")"
   echo "datasets version: $(datasets --version 2>/dev/null || echo 'unknown')"
   echo
   echo "| Dataset | Input | Accession list | Count | ZIP output | Unpack directory | Flat FASTA directory |"
