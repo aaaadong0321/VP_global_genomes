@@ -15,7 +15,14 @@ CONDA_ENV="/workspace/hraxxg/conda-envs/datasets"
 # accessions. Already downloaded FASTA files are detected and skipped.
 MODE="${MODE:-test}"
 TEST_ACCESSIONS="${TEST_ACCESSIONS:-10}"
-BATCH_SIZE="${BATCH_SIZE:-500}"
+# DOWNLOAD_METHOD=direct downloads ZIPs that already contain FASTA files.
+# DOWNLOAD_METHOD=dehydrated downloads dehydrated ZIPs and then rehydrates them.
+DOWNLOAD_METHOD="${DOWNLOAD_METHOD:-direct}"
+BATCH_SIZE="${BATCH_SIZE:-10}"
+REHYDRATE_WORKERS="${REHYDRATE_WORKERS:-2}"
+DOWNLOAD_RETRIES="${DOWNLOAD_RETRIES:-3}"
+REHYDRATE_RETRIES="${REHYDRATE_RETRIES:-5}"
+RETRY_SLEEP="${RETRY_SLEEP:-60}"
 
 BACKGROUND_TSV="${PROJECT_DIR}/data/processed/04_biosample_deduplicated.tsv"
 PRE2019_ST50_TSV="${PROJECT_DIR}/results/accession_lists/pre_2019_st50_accessions.tsv"
@@ -65,6 +72,28 @@ require_command() {
     log "ERROR: required command not found: $1"
     exit 1
   fi
+}
+
+run_with_retries() {
+  local label="$1"
+  local attempts="$2"
+  local sleep_seconds="$3"
+  shift 3
+
+  local attempt
+  for attempt in $(seq 1 "${attempts}"); do
+    log "${label}: attempt ${attempt}/${attempts}"
+    if "$@"; then
+      return 0
+    fi
+    if [[ "${attempt}" -lt "${attempts}" ]]; then
+      log "WARNING ${label}: failed; sleeping ${sleep_seconds}s before retry"
+      sleep "${sleep_seconds}"
+    fi
+  done
+
+  log "WARNING ${label}: failed after ${attempts} attempt(s)"
+  return 1
 }
 
 extract_accessions() {
@@ -201,27 +230,58 @@ download_and_rehydrate_batches() {
 
     log "=== ${label} ${batch_name}: ${batch_count} accession(s) ==="
 
-    cmd="datasets download genome accession --inputfile \"${batch_file}\" --include genome --dehydrated --filename \"${zip_file}\" --no-progressbar"
+    if [[ "${DOWNLOAD_METHOD}" == "dehydrated" ]]; then
+      cmd="datasets download genome accession --inputfile \"${batch_file}\" --include genome --dehydrated --filename \"${zip_file}\" --no-progressbar"
+    else
+      cmd="datasets download genome accession --inputfile \"${batch_file}\" --include genome --filename \"${zip_file}\" --no-progressbar"
+    fi
     record_command "${cmd}"
 
     if [[ -s "${zip_file}" ]] && unzip -tq "${zip_file}" >/dev/null 2>&1; then
       log "Using existing valid ZIP: ${zip_file}"
     else
       rm -f "${zip_file}"
-      datasets download genome accession \
-        --inputfile "${batch_file}" \
-        --include genome \
-        --dehydrated \
-        --filename "${zip_file}" \
-        --no-progressbar
+      if [[ "${DOWNLOAD_METHOD}" == "dehydrated" ]]; then
+        run_with_retries \
+          "Download ${label} ${batch_name}" \
+          "${DOWNLOAD_RETRIES}" \
+          "${RETRY_SLEEP}" \
+          datasets download genome accession \
+            --inputfile "${batch_file}" \
+            --include genome \
+            --dehydrated \
+            --filename "${zip_file}" \
+            --no-progressbar
+      else
+        run_with_retries \
+          "Download ${label} ${batch_name}" \
+          "${DOWNLOAD_RETRIES}" \
+          "${RETRY_SLEEP}" \
+          datasets download genome accession \
+            --inputfile "${batch_file}" \
+            --include genome \
+            --filename "${zip_file}" \
+            --no-progressbar
+      fi
     fi
 
     mkdir -p "${out_dir}"
     unzip -q -o "${zip_file}" -d "${out_dir}"
 
-    cmd="datasets rehydrate --directory \"${out_dir}\" --no-progressbar"
-    record_command "${cmd}"
-    datasets rehydrate --directory "${out_dir}" --no-progressbar
+    if [[ "${DOWNLOAD_METHOD}" == "dehydrated" ]]; then
+      cmd="datasets rehydrate --directory \"${out_dir}\" --max-workers \"${REHYDRATE_WORKERS}\" --no-progressbar"
+      record_command "${cmd}"
+      if ! run_with_retries \
+        "Rehydrate ${label} ${batch_name}" \
+        "${REHYDRATE_RETRIES}" \
+        "${RETRY_SLEEP}" \
+        datasets rehydrate \
+          --directory "${out_dir}" \
+          --max-workers "${REHYDRATE_WORKERS}" \
+          --no-progressbar; then
+        log "WARNING ${label} ${batch_name}: rehydrate incomplete; successful FASTA files are kept and missing accessions will be retried on the next submission"
+      fi
+    fi
   done
 }
 
@@ -275,6 +335,11 @@ if [[ "${MODE}" != "test" && "${MODE}" != "full" ]]; then
   exit 2
 fi
 
+if [[ "${DOWNLOAD_METHOD}" != "direct" && "${DOWNLOAD_METHOD}" != "dehydrated" ]]; then
+  log "ERROR: DOWNLOAD_METHOD must be direct or dehydrated"
+  exit 2
+fi
+
 source "${CONDA_SH}"
 conda activate "${CONDA_ENV}"
 
@@ -284,14 +349,20 @@ require_command find
 require_command sort
 require_command unzip
 require_command wc
+require_command seq
 
 log "Run date: $(date -Is)"
 log "Host: $(hostname)"
 log "SLURM_JOB_ID: ${SLURM_JOB_ID:-NA}"
 log "Project directory: ${PROJECT_DIR}"
 log "Mode: ${MODE}"
+log "Download method: ${DOWNLOAD_METHOD}"
 log "Test accessions: ${TEST_ACCESSIONS}"
 log "Batch size: ${BATCH_SIZE}"
+log "Rehydrate workers: ${REHYDRATE_WORKERS}"
+log "Download retries: ${DOWNLOAD_RETRIES}"
+log "Rehydrate retries: ${REHYDRATE_RETRIES}"
+log "Retry sleep seconds: ${RETRY_SLEEP}"
 log "datasets version: $(datasets --version 2>/dev/null || echo unknown)"
 log ""
 
@@ -363,8 +434,13 @@ flatten_fastas \
   echo "Run date: $(date -Is)"
   echo "SLURM_JOB_ID: ${SLURM_JOB_ID:-NA}"
   echo "Mode: ${MODE}"
+  echo "Download method: ${DOWNLOAD_METHOD}"
   echo "Test accessions: ${TEST_ACCESSIONS}"
   echo "Batch size: ${BATCH_SIZE}"
+  echo "Rehydrate workers: ${REHYDRATE_WORKERS}"
+  echo "Download retries: ${DOWNLOAD_RETRIES}"
+  echo "Rehydrate retries: ${REHYDRATE_RETRIES}"
+  echo "Retry sleep seconds: ${RETRY_SLEEP}"
   echo "datasets version: $(datasets --version 2>/dev/null || echo unknown)"
   echo
   echo "| Dataset | Full accession list | Full count | This-run accession list | This-run count | Unpack directory | Flat FASTA directory |"
