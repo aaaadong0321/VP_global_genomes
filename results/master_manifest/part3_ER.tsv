@@ -1,0 +1,16 @@
+genome_id	source_category	fasta_path	GCA	BioSample	ST	country	year	assembly_status	is_ST50	notes
+19ER2032	NZ_clinical	/powerplant/output/genomic/bacterial/Vibrio/vibrio_genomics/genomes/assembled/19ER2032_S6_assembly.fna	GCF_039557785.1	SAMN34072720	36	New Zealand	2019	suppressed	NO	source:PFR_local_clinical
+19ER2175	NZ_clinical	/powerplant/output/genomic/bacterial/Vibrio/vibrio_genomics/genomes/assembled/19ER2175_S7_assembly.fna	GCF_039557745.1	SAMN34072721	36	New Zealand	2019	suppressed	NO	source:PFR_local_clinical
+19ER2200	NZ_clinical	/powerplant/output/genomic/bacterial/Vibrio/vibrio_genomics/genomes/assembled/19ER2200_S8_assembly.fna	GCF_039557705.1	SAMN34072722	36	New Zealand	2019	suppressed	NO	source:PFR_local_clinical
+19ER2252	NZ_clinical	/powerplant/output/genomic/bacterial/Vibrio/vibrio_genomics/genomes/assembled/19ER2252_S9_assembly.fna	GCF_039557725.1	SAMN34072723	36	New Zealand	2019	suppressed	NO	source:PFR_local_clinical
+19ER2253	NZ_clinical	/powerplant/output/genomic/bacterial/Vibrio/vibrio_genomics/genomes/assembled/19ER2253_S10_assembly.fna	GCF_039557665.1	SAMN34072724	36	New Zealand	2019	suppressed	NO	source:PFR_local_clinical
+19ER2263	NZ_clinical	/powerplant/output/genomic/bacterial/Vibrio/vibrio_genomics/genomes/assembled/19ER2263_S11_assembly.fna	GCF_039557605.1	SAMN34072725	36	New Zealand	2019	suppressed	NO	source:PFR_local_clinical
+19ER2264	NZ_clinical	/powerplant/output/genomic/bacterial/Vibrio/vibrio_genomics/genomes/assembled/19ER2264_S12_assembly.fna	GCF_039557515.1	SAMN34072726	36	New Zealand	2019	suppressed	NO	source:PFR_local_clinical
+19ER2305	NZ_clinical	/powerplant/output/genomic/bacterial/Vibrio/vibrio_genomics/genomes/assembled/19ER2305_S13_assembly.fna	GCF_039557545.1	SAMN34072727	36	New Zealand	2019	suppressed	NO	source:PFR_local_clinical
+19ER2454	NZ_clinical	/powerplant/output/genomic/bacterial/Vibrio/vibrio_genomics/genomes/assembled/19ER2454_S14_assembly.fna	GCF_039557505.1	SAMN34072728	36	New Zealand	2019	suppressed	NO	source:PFR_local_clinical
+19ER2456	NZ_clinical	/powerplant/output/genomic/bacterial/Vibrio/vibrio_genomics/genomes/assembled/19ER2456_S15_assembly.fna	GCF_039557465.1	SAMN34072729	2630	New Zealand	2019	suppressed	NO	source:PFR_local_clinical
+19ER2457	NZ_clinical	/powerplant/output/genomic/bacterial/Vibrio/vibrio_genomics/genomes/assembled/19ER2457_S16_assembly.fna	GCF_039557365.1	SAMN34072730	1357	New Zealand	2019	suppressed	NO	source:PFR_local_clinical
+19ER2458	NZ_clinical	/powerplant/output/genomic/bacterial/Vibrio/vibrio_genomics/genomes/assembled/19ER2458_S17_assembly.fna	GCF_039557345.1	SAMN34072731	648	New Zealand	2019	suppressed	NO	source:PFR_local_clinical
+21ER0754	NZ_clinical	/powerplant/output/genomic/bacterial/Vibrio/vibrio_genomics/genomes/assembled/21ER0754_S43_assembly.fna	GCF_039556055.1	SAMN34072765	199	New Zealand	2021	suppressed	NO	source:PFR_local_clinical
+21ER0755	NZ_clinical	/powerplant/output/genomic/bacterial/Vibrio/vibrio_genomics/genomes/assembled/21ER0755_S44_assembly.fna	GCF_039556045.1	SAMN34072766	199	New Zealand	2021	suppressed	NO	source:PFR_local_clinical
+21ER1500	NZ_clinical	/powerplant/output/genomic/bacterial/Vibrio/vibrio_genomics/genomes/assembled/21ER1500_S49_assembly.fna	GCF_039555435.1	SAMN34072781	36	New Zealand	2021	suppressed	NO	source:PFR_local_clinical

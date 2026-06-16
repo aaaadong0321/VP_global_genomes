@@ -1,0 +1,182 @@
+genome_id	source_category	fasta_path	GCA	BioSample	ST	country	year	assembly_status	is_ST50	notes
+19ER2370	ST50	/powerplant/output/genomic/bacterial/Vibrio/vibrio_genomics/genomes/assembled/19ER2370_S36_assembly.fna	GCA_039557245		50	Fiji	2019		YES	source:PFR_local
+19ER4464	ST50	/powerplant/output/genomic/bacterial/Vibrio/vibrio_genomics/genomes/assembled/19ER4464_S37_assembly.fna	GCA_039557325		50	Fiji	2019		YES	source:PFR_local
+20ER0396	ST50	/powerplant/output/genomic/bacterial/Vibrio/vibrio_genomics/genomes/assembled/20ER0396_S39_assembly.fna	GCA_049037125.1	SAMN44062652	50	New Zealand	2020		YES	source:PFR_local
+20ER0397	ST50	/powerplant/output/genomic/bacterial/Vibrio/vibrio_genomics/genomes/assembled/20ER0397_S40_assembly.fna	GCA_049037145.1	SAMN44062653	50	New Zealand	2020		YES	source:PFR_local
+20ER0715	ST50	/powerplant/output/genomic/bacterial/Vibrio/vibrio_genomics/genomes/assembled/20ER0715_S21_assembly.fna	GCA_049037205.1	SAMN44062656	50	New Zealand	2020		YES	source:PFR_local
+20ER0927	ST50	/powerplant/output/genomic/bacterial/Vibrio/vibrio_genomics/genomes/assembled/20ER0927_S41_assembly.fna	GCA_049037285.1	SAMN44062658	50	New Zealand	2020		YES	source:PFR_local
+20ER0928	ST50	/powerplant/output/genomic/bacterial/Vibrio/vibrio_genomics/genomes/assembled/20ER0928_S42_assembly.fna	GCA_049037295.1	SAMN44062659	50	New Zealand	2020		YES	source:PFR_local
+20ER0962	ST50	/powerplant/output/genomic/bacterial/Vibrio/vibrio_genomics/genomes/assembled/20ER0962_S43_assembly.fna	GCA_049037325.1	SAMN44062660	50	New Zealand	2020		YES	source:PFR_local
+20ER0990	ST50	/powerplant/output/genomic/bacterial/Vibrio/vibrio_genomics/genomes/assembled/20ER0990_S44_assembly.fna	GCA_049037345.1	SAMN44062661	50	New Zealand	2020		YES	source:PFR_local
+20ER1681	ST50	/powerplant/output/genomic/bacterial/Vibrio/vibrio_genomics/genomes/assembled/20ER1681_S39_assembly.fna	GCA_049037615.1	SAMN44062662	50	New Zealand	2020		YES	source:PFR_local
+20ER1728	ST50	/powerplant/output/genomic/bacterial/Vibrio/vibrio_genomics/genomes/assembled/20ER1728_S46_assembly.fna	GCA_049250035.1	SAMN44062663	50	New Zealand	2020		YES	source:PFR_local
+20ER1729	ST50	/powerplant/output/genomic/bacterial/Vibrio/vibrio_genomics/genomes/assembled/20ER1729_S47_assembly.fna	GCA_049250075.1	SAMN44062664	50	New Zealand	2020		YES	source:PFR_local
+20ER1730	ST50	/powerplant/output/genomic/bacterial/Vibrio/vibrio_genomics/genomes/assembled/20ER1730_S48_assembly.fna	GCA_049250095.1	SAMN44062665	50	New Zealand	2020		YES	source:PFR_local
+20ER1748	ST50	/powerplant/output/genomic/bacterial/Vibrio/vibrio_genomics/genomes/assembled/20ER1748_S49_assembly.fna	GCA_049250115.1	SAMN44062666	50	New Zealand	2020		YES	source:PFR_local
+20ER1749	ST50	/powerplant/output/genomic/bacterial/Vibrio/vibrio_genomics/genomes/assembled/20ER1749_S50_assembly.fna	GCA_049032065.1	SAMN44062667	50	New Zealand	2020		YES	source:PFR_local
+20ER1750	ST50	/powerplant/output/genomic/bacterial/Vibrio/vibrio_genomics/genomes/assembled/20ER1750_S51_assembly.fna	GCA_049032235.1	SAMN44062668	50	New Zealand	2020		YES	source:PFR_local
+20ER1772	ST50	/powerplant/output/genomic/bacterial/Vibrio/vibrio_genomics/genomes/assembled/20ER1772_S52_assembly.fna	GCA_049032285.1	SAMN44062669	50	New Zealand	2020		YES	source:PFR_local
+20ER1816	ST50	/powerplant/output/genomic/bacterial/Vibrio/vibrio_genomics/genomes/assembled/20ER1816_S40_assembly.fna	GCA_049032635.1	SAMN44062670	50	New Zealand	2020		YES	source:PFR_local
+20ER1817	ST50	/powerplant/output/genomic/bacterial/Vibrio/vibrio_genomics/genomes/assembled/20ER1817_S23_assembly.fna	GCA_049032665.1	SAMN44062671	50	New Zealand	2020		YES	source:PFR_local
+20ER1818	ST50	/powerplant/output/genomic/bacterial/Vibrio/vibrio_genomics/genomes/assembled/20ER1818_S24_assembly.fna	GCA_049032485.1	SAMN44062672	50	New Zealand	2020		YES	source:PFR_local
+20ER1842	ST50	/powerplant/output/genomic/bacterial/Vibrio/vibrio_genomics/genomes/assembled/20ER1842_S17_assembly.fna	GCA_049032785.1	SAMN44062673	50	New Zealand	2020		YES	source:PFR_local
+20ER1852	ST50	/powerplant/output/genomic/bacterial/Vibrio/vibrio_genomics/genomes/assembled/20ER1852_S18_assembly.fna	GCA_049032995.1	SAMN44062674	50	New Zealand	2020		YES	source:PFR_local
+20ER1862	ST50	/powerplant/output/genomic/bacterial/Vibrio/vibrio_genomics/genomes/assembled/20ER1862_S19_assembly.fna	GCA_049033225.1	SAMN44062675	50	New Zealand	2020		YES	source:PFR_local
+20ER2020	ST50	/powerplant/output/genomic/bacterial/Vibrio/vibrio_genomics/genomes/assembled/20ER2020_S41_assembly.fna	GCA_049033295.1	SAMN44062676	50	New Zealand	2020		YES	source:PFR_local
+20ER2114	ST50	/powerplant/output/genomic/bacterial/Vibrio/vibrio_genomics/genomes/assembled/20ER2114_S51_assembly.fna	GCA_039556465		50	New Zealand	2020		YES	source:PFR_local
+20ER2115	ST50	/powerplant/output/genomic/bacterial/Vibrio/vibrio_genomics/genomes/assembled/20ER2115_S52_assembly.fna	GCA_039556295		50	New Zealand	2020		YES	source:PFR_local
+20ER2116	ST50	/powerplant/output/genomic/bacterial/Vibrio/vibrio_genomics/genomes/assembled/20ER2116_S53_assembly.fna	GCA_039556285		50	New Zealand	2020		YES	source:PFR_local
+20ER2208	ST50	/powerplant/output/genomic/bacterial/Vibrio/vibrio_genomics/genomes/assembled/20ER2208_S37_assembly.fna	GCA_049033345.1	SAMN44062677	50	New Zealand	2020		YES	source:PFR_local
+20ER3249	ST50	/powerplant/output/genomic/bacterial/Vibrio/vibrio_genomics/genomes/assembled/20ER3249_S38_assembly.fna	GCA_049033455.1	SAMN44062678	50	New Zealand	2020		YES	source:PFR_local
+21ER0224	ST50	/powerplant/output/genomic/bacterial/Vibrio/vibrio_genomics/genomes/assembled/21ER0224_S39_assembly.fna	GCA_049033755.1	SAMN44062680	50	New Zealand	2021		YES	source:PFR_local
+21ER0459	ST50	/powerplant/output/genomic/bacterial/Vibrio/vibrio_genomics/genomes/assembled/21ER0459_S40_assembly.fna	GCA_049034005.1	SAMN44062682	50	New Zealand	2021		YES	source:PFR_local
+21ER0509	ST50	/powerplant/output/genomic/bacterial/Vibrio/vibrio_genomics/genomes/assembled/21ER0509_S41_assembly.fna	GCA_049033945.1	SAMN44062683	50	New Zealand	2021		YES	source:PFR_local
+21ER0725	ST50	/powerplant/output/genomic/bacterial/Vibrio/vibrio_genomics/genomes/assembled/21ER0725_S42_assembly.fna	GCA_049030475.1	SAMN44062684	50	New Zealand	2021		YES	source:PFR_local
+21ER0811	ST50	/powerplant/output/genomic/bacterial/Vibrio/vibrio_genomics/genomes/assembled/21ER0811_S45_assembly.fna	GCA_049030895.1	SAMN44062687	50	New Zealand	2021		YES	source:PFR_local
+21ER0824	ST50	/powerplant/output/genomic/bacterial/Vibrio/vibrio_genomics/genomes/assembled/21ER0824_S46_assembly.fna	GCA_049030955.1	SAMN44062688	50	New Zealand	2021		YES	source:PFR_local
+21ER0825	ST50	/powerplant/output/genomic/bacterial/Vibrio/vibrio_genomics/genomes/assembled/21ER0825_S47_assembly.fna	GCA_049031175.1	SAMN44062689	50	New Zealand	2021		YES	source:PFR_local
+21ER0826	ST50	/powerplant/output/genomic/bacterial/Vibrio/vibrio_genomics/genomes/assembled/21ER0826_S48_assembly.fna	GCA_049031275.1	SAMN44062690	50	New Zealand	2021		YES	source:PFR_local
+21ER0868	ST50	/powerplant/output/genomic/bacterial/Vibrio/vibrio_genomics/genomes/assembled/21ER0868_S49_assembly.fna	GCA_049031315.1	SAMN44062691	50	New Zealand	2021		YES	source:PFR_local
+21ER0942	ST50	/powerplant/output/genomic/bacterial/Vibrio/vibrio_genomics/genomes/assembled/21ER0942_S31_assembly.fna	GCA_049030025.1	SAMN44062692	50	New Zealand	2021		YES	source:PFR_local
+21ER0952	ST50	/powerplant/output/genomic/bacterial/Vibrio/vibrio_genomics/genomes/assembled/21ER0952_S32_assembly.fna	GCA_049030275.1	SAMN44062693	50	New Zealand	2021		YES	source:PFR_local
+21ER0953	ST50	/powerplant/output/genomic/bacterial/Vibrio/vibrio_genomics/genomes/assembled/21ER0953_S33_assembly.fna	GCA_049030395.1	SAMN44062694	50	New Zealand	2021		YES	source:PFR_local
+21ER0955	ST50	/powerplant/output/genomic/bacterial/Vibrio/vibrio_genomics/genomes/assembled/21ER0955_S35_assembly.fna	GCA_049031635.1	SAMN44062696	50	New Zealand	2021		YES	source:PFR_local
+21ER1334	ST50	/powerplant/output/genomic/bacterial/Vibrio/vibrio_genomics/genomes/assembled/21ER1334_S34_assembly.fna	GCA_039555455		50	New Zealand	2021		YES	source:PFR_local
+21ER1438	ST50	/powerplant/output/genomic/bacterial/Vibrio/vibrio_genomics/genomes/assembled/21ER1438_S29_assembly.fna	GCA_049031695.1	SAMN44062697	50	New Zealand	2021		YES	source:PFR_local
+21ER1445	ST50	/powerplant/output/genomic/bacterial/Vibrio/vibrio_genomics/genomes/assembled/21ER1445_S30_assembly.fna	GCA_049031755.1	SAMN44062698	50	New Zealand	2021		YES	source:PFR_local
+21ER1446	ST50	/powerplant/output/genomic/bacterial/Vibrio/vibrio_genomics/genomes/assembled/21ER1446_S31_assembly.fna	GCA_049031895.1	SAMN44062699	50	New Zealand	2021		YES	source:PFR_local
+SRR15218475	ST50	/workspace/hraxxg/Vp_ST50_Oceania/input/assembled/NA_Asia_ST50/SRR15218475.fas	PubMLST_id:7974	N/A	50	USA	1997		YES	source:NA_Asia_local
+SRR15218481	ST50	/workspace/hraxxg/Vp_ST50_Oceania/input/assembled/NA_Asia_ST50/SRR15218481.fas	PubMLST_id:7978	N/A	50	USA	1997		YES	source:NA_Asia_local
+SRR15218922	ST50	/workspace/hraxxg/Vp_ST50_Oceania/input/assembled/NA_Asia_ST50/GCA_025067035.1.fna	GCA_025067035.1	SAMN20352555	50	China	2013		YES	source:NA_Asia_local
+SRR15219032	ST50	/workspace/hraxxg/Vp_ST50_Oceania/input/assembled/NA_Asia_ST50/SRR15219032.fas	PubMLST_id:8260	N/A	50	USA	1997		YES	source:NA_Asia_local
+SRR15219033	ST50	/workspace/hraxxg/Vp_ST50_Oceania/input/assembled/NA_Asia_ST50/GCA_023821265.1.fna	GCA_023821265.1	SAMN20353146	50	China	2015		YES	source:NA_Asia_local
+PNUSAV002029	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_019774395.1_GCA_019774395.1_PDT001116817.1_genomic.fna	GCA_019774395.1	SAMN20976192	50	USA	2021		YES	source:NCBI_background
+ST50	ST50	data/raw/ncbi_assemblies/pre_2019_st50/batch_001/ncbi_dataset/data/GCA_024483205.1/GCA_024483205.1_PDT001371596.1_genomic.fna	GCA_024483205.1	SAMN23430656	50	Australia	Unkn		YES	source:NCBI_pre2019
+CDC_K5485	ST50	/workspace/hraxxg/Vp_ST50_Oceania/input/assembled/NA_Asia_ST50/GCF_001728565.1.fna	GCA_001728565.1	SAMN03358835	50	USA	2007		YES	source:NA_Asia_local
+PNUSAV003582	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_026187055.1_GCA_026187055.1_PDT001486249.1_genomic.fna	GCA_026187055.1	SAMN31743121	50	USA	2022		YES	source:NCBI_background
+PNUSAV003632	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_028921885.1_GCA_028921885.1_PDT001649587.1_genomic.fna	GCA_028921885.1	SAMN33495990	50	USA	2022		YES	source:NCBI_background
+PNUSAV003720	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_031153455.1_GCA_031153455.1_PDT001735183.1_genomic.fna	GCA_031153455.1	SAMN35089521	50	USA	2022		YES	source:NCBI_background
+PNUSAV004335	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_031102145.1_GCA_031102145.1_PDT001839725.1_genomic.fna	GCA_031102145.1	SAMN36838897	50	USA	2022		YES	source:NCBI_background
+PNUSAV004356	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_031101075.1_GCA_031101075.1_PDT001846982.1_genomic.fna	GCA_031101075.1	SAMN36909166	50	USA	2023		YES	source:NCBI_background
+PNUSAV004558	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_031308645.1_GCA_031308645.1_PDT001876765.1_genomic.fna	GCA_031308645.1	SAMN37316152	50	USA	2023		YES	source:NCBI_background
+50	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_043311815.1_GCA_043311815.1_PDT002265117.1_genomic.fna	GCA_043311815.1	SAMN42183095	50	Australia	2021		YES	source:NCBI_background
+50	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_043311795.1_GCA_043311795.1_PDT002265118.1_genomic.fna	GCA_043311795.1	SAMN42183094	50	Australia	2021		YES	source:NCBI_background
+50	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_043311775.1_GCA_043311775.1_PDT002265119.1_genomic.fna	GCA_043311775.1	SAMN42183093	50	Australia	2021		YES	source:NCBI_background
+50	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_043311695.1_GCA_043311695.1_PDT002265124.1_genomic.fna	GCA_043311695.1	SAMN42183111	50	Australia	2021		YES	source:NCBI_background
+50	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_043307315.1_GCA_043307315.1_PDT002265129.1_genomic.fna	GCA_043307315.1	SAMN42183106	50	Australia	2021		YES	source:NCBI_background
+50	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_043307275.1_GCA_043307275.1_PDT002265130.1_genomic.fna	GCA_043307275.1	SAMN42183088	50	Australia	2021		YES	source:NCBI_background
+50	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_043307075.1_GCA_043307075.1_PDT002265140.1_genomic.fna	GCA_043307075.1	SAMN42183096	50	Australia	2021		YES	source:NCBI_background
+AUSMDU00067286	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_044024475.1_GCA_044024475.1_PDT002240132.1_genomic.fna	GCA_044024475.1	SAMN42326795	50	Australia	2021		YES	source:NCBI_background
+AUSMDU00066590	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_044024515.1_GCA_044024515.1_PDT002240134.1_genomic.fna	GCA_044024515.1	SAMN42326793	50	Australia	2021		YES	source:NCBI_background
+AUSMDU00066531	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_044024375.1_GCA_044024375.1_PDT002240138.1_genomic.fna	GCA_044024375.1	SAMN42326790	50	Australia	2021		YES	source:NCBI_background
+AUSMDU00066437	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_044024295.1_GCA_044024295.1_PDT002240142.1_genomic.fna	GCA_044024295.1	SAMN42326786	50	Australia	2021		YES	source:NCBI_background
+AUSMDU00066360	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_044024075.1_GCA_044024075.1_PDT002240148.1_genomic.fna	GCA_044024075.1	SAMN42326781	50	Australia	2021		YES	source:NCBI_background
+AUSMDU00066358	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_044024035.1_GCA_044024035.1_PDT002240149.1_genomic.fna	GCA_044024035.1	SAMN42326780	50	Australia	2021		YES	source:NCBI_background
+AUSMDU00065274	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_044023875.1_GCA_044023875.1_PDT002240157.1_genomic.fna	GCA_044023875.1	SAMN42326737	50	Australia	2021		YES	source:NCBI_background
+AUSMDU00066227	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_044023675.1_GCA_044023675.1_PDT002240167.1_genomic.fna	GCA_044023675.1	SAMN42326763	50	Australia	2021		YES	source:NCBI_background
+AUSMDU00065256	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_044023695.1_GCA_044023695.1_PDT002240168.1_genomic.fna	GCA_044023695.1	SAMN42326736	50	Australia	2021		YES	source:NCBI_background
+AUSMDU00066221	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_044023615.1_GCA_044023615.1_PDT002240171.1_genomic.fna	GCA_044023615.1	SAMN42326760	50	Australia	2021		YES	source:NCBI_background
+AUSMDU00066215	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_044023575.1_GCA_044023575.1_PDT002240173.1_genomic.fna	GCA_044023575.1	SAMN42326758	50	Australia	2021		YES	source:NCBI_background
+AUSMDU00066214	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_044023555.1_GCA_044023555.1_PDT002240174.1_genomic.fna	GCA_044023555.1	SAMN42326757	50	Australia	2021		YES	source:NCBI_background
+AUSMDU00066210	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_044023435.1_GCA_044023435.1_PDT002240178.1_genomic.fna	GCA_044023435.1	SAMN42326753	50	Australia	2021		YES	source:NCBI_background
+AUSMDU00066124	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_044023315.1_GCA_044023315.1_PDT002240186.1_genomic.fna	GCA_044023315.1	SAMN42326746	50	Australia	2021		YES	source:NCBI_background
+AUSMDU00065023	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_044023135.1_GCA_044023135.1_PDT002240190.1_genomic.fna	GCA_044023135.1	SAMN42326734	50	Australia	2021		YES	source:NCBI_background
+AUSMDU00056626	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_044023175.1_GCA_044023175.1_PDT002240191.1_genomic.fna	GCA_044023175.1	SAMN42326733	50	Australia	2021		YES	source:NCBI_background
+2202420409	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_043476315.1_GCA_043476315.1_PDT002291594.1_genomic.fna	GCA_043476315.1	SAMN42326957	50	Australia	2022		YES	source:NCBI_background
+2201723783	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_043477615.1_GCA_043477615.1_PDT002291596.1_genomic.fna	GCA_043477615.1	SAMN42326955	50	Australia	2022		YES	source:NCBI_background
+2200426960	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_043476295.1_GCA_043476295.1_PDT002291598.1_genomic.fna	GCA_043476295.1	SAMN42326953	50	Australia	2022		YES	source:NCBI_background
+2200426959	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_043477655.1_GCA_043477655.1_PDT002291599.1_genomic.fna	GCA_043477655.1	SAMN42326952	50	Australia	2022		YES	source:NCBI_background
+2133007579	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_043476235.1_GCA_043476235.1_PDT002291601.1_genomic.fna	GCA_043476235.1	SAMN42326950	50	Australia	2021		YES	source:NCBI_background
+2132812846	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_043477595.1_GCA_043477595.1_PDT002291604.1_genomic.fna	GCA_043477595.1	SAMN42326948	50	Australia	2021		YES	source:NCBI_background
+2132713513	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_043477555.1_GCA_043477555.1_PDT002291605.1_genomic.fna	GCA_043477555.1	SAMN42326947	50	Australia	2021		YES	source:NCBI_background
+2132704967	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_043476175.1_GCA_043476175.1_PDT002291609.1_genomic.fna	GCA_043476175.1	SAMN42326943	50	Australia	2021		YES	source:NCBI_background
+2132617709	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_043474515.1_GCA_043474515.1_PDT002291610.1_genomic.fna	GCA_043474515.1	SAMN42326942	50	Australia	2021		YES	source:NCBI_background
+2132617705	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_043477565.1_GCA_043477565.1_PDT002291611.1_genomic.fna	GCA_043477565.1	SAMN42326941	50	Australia	2021		YES	source:NCBI_background
+2132315484	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_043477455.1_GCA_043477455.1_PDT002291615.1_genomic.fna	GCA_043477455.1	SAMN42326938	50	Australia	2021		YES	source:NCBI_background
+2132315481	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_043479095.1_GCA_043479095.1_PDT002291616.1_genomic.fna	GCA_043479095.1	SAMN42326937	50	Australia	2021		YES	source:NCBI_background
+2132315476	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_043474495.1_GCA_043474495.1_PDT002291618.1_genomic.fna	GCA_043474495.1	SAMN42326935	50	Australia	2021		YES	source:NCBI_background
+2132314211	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_043477415.1_GCA_043477415.1_PDT002291619.1_genomic.fna	GCA_043477415.1	SAMN42326934	50	Australia	2021		YES	source:NCBI_background
+2132215847	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_043479075.1_GCA_043479075.1_PDT002291627.1_genomic.fna	GCA_043479075.1	SAMN42326927	50	Australia	2021		YES	source:NCBI_background
+2132009659	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_043474405.1_GCA_043474405.1_PDT002291631.1_genomic.fna	GCA_043474405.1	SAMN42326923	50	Australia	2021		YES	source:NCBI_background
+2131917506	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_043474435.1_GCA_043474435.1_PDT002291635.1_genomic.fna	GCA_043474435.1	SAMN42326919	50	Australia	2021		YES	source:NCBI_background
+2131917481	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_043474375.1_GCA_043474375.1_PDT002291637.1_genomic.fna	GCA_043474375.1	SAMN42326918	50	Australia	2021		YES	source:NCBI_background
+2131917478	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_043474335.1_GCA_043474335.1_PDT002291638.1_genomic.fna	GCA_043474335.1	SAMN42326917	50	Australia	2021		YES	source:NCBI_background
+2131910946	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_043474255.1_GCA_043474255.1_PDT002291641.1_genomic.fna	GCA_043474255.1	SAMN42326914	50	Australia	2021		YES	source:NCBI_background
+2131709416	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_043474315.1_GCA_043474315.1_PDT002291645.1_genomic.fna	GCA_043474315.1	SAMN42326910	50	Australia	2021		YES	source:NCBI_background
+2131515216	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_043473555.1_GCA_043473555.1_PDT002291651.1_genomic.fna	GCA_043473555.1	SAMN42326905	50	Australia	2021		YES	source:NCBI_background
+2130715556	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_043476055.1_GCA_043476055.1_PDT002291667.1_genomic.fna	GCA_043476055.1	SAMN42326890	50	Australia	2021		YES	source:NCBI_background
+M2107179	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_043477155.1_GCA_043477155.1_PDT002291669.1_genomic.fna	GCA_043477155.1	SAMN42326862	50	Australia	2021		YES	source:NCBI_background
+2128710522	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_043476015.1_GCA_043476015.1_PDT002291677.1_genomic.fna	GCA_043476015.1	SAMN42326881	50	Australia	2021		YES	source:NCBI_background
+2128409799	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_043477095.1_GCA_043477095.1_PDT002291678.1_genomic.fna	GCA_043477095.1	SAMN42326880	50	Australia	2021		YES	source:NCBI_background
+2127006814	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_043477035.1_GCA_043477035.1_PDT002291679.1_genomic.fna	GCA_043477035.1	SAMN42326879	50	Australia	2021		YES	source:NCBI_background
+M2107026	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_043475995.1_GCA_043475995.1_PDT002291680.1_genomic.fna	GCA_043475995.1	SAMN42326861	50	Australia	2021		YES	source:NCBI_background
+2127005475	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_043477015.1_GCA_043477015.1_PDT002291681.1_genomic.fna	GCA_043477015.1	SAMN42326878	50	Australia	2021		YES	source:NCBI_background
+2126511214	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_043476975.1_GCA_043476975.1_PDT002291682.1_genomic.fna	GCA_043476975.1	SAMN42326877	50	Australia	2021		YES	source:NCBI_background
+2125709510	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_043476995.1_GCA_043476995.1_PDT002291683.1_genomic.fna	GCA_043476995.1	SAMN42326876	50	Australia	2021		YES	source:NCBI_background
+2125709276	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_043476955.1_GCA_043476955.1_PDT002291684.1_genomic.fna	GCA_043476955.1	SAMN42326875	50	Australia	2021		YES	source:NCBI_background
+2125315691	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_043475935.1_GCA_043475935.1_PDT002291685.1_genomic.fna	GCA_043475935.1	SAMN42326874	50	Australia	2021		YES	source:NCBI_background
+M2107990	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_043475045.1_GCA_043475045.1_PDT002291690.1_genomic.fna	GCA_043475045.1	SAMN42326869	50	Australia	2021		YES	source:NCBI_background
+M2106802	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_043474965.1_GCA_043474965.1_PDT002291691.1_genomic.fna	GCA_043474965.1	SAMN42326860	50	Australia	2021		YES	source:NCBI_background
+23ER1085	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_049036545.1_GCA_049036545.1_PDT002655120.1_genomic.fna	GCA_049036545.1	SAMN44062786	50	New Zealand	2023		YES	source:NCBI_background
+23ER0680	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_049036005.1_GCA_049036005.1_PDT002655126.1_genomic.fna	GCA_049036005.1	SAMN44062781	50	New Zealand	2023		YES	source:NCBI_background
+23ER0315	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_049035635.1_GCA_049035635.1_PDT002655130.1_genomic.fna	GCA_049035635.1	SAMN44062777	50	New Zealand	2023		YES	source:NCBI_background
+23ER0215	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_049035035.1_GCA_049035035.1_PDT002655132.1_genomic.fna	GCA_049035035.1	SAMN44062775	50	New Zealand	2023		YES	source:NCBI_background
+23ER2065	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_049249615.1_GCA_049249615.1_PDT002655188.1_genomic.fna	GCA_049249615.1	SAMN44062790	50	New Zealand	2023		YES	source:NCBI_background
+23ER2048	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_049249595.1_GCA_049249595.1_PDT002655189.1_genomic.fna	GCA_049249595.1	SAMN44062789	50	New Zealand	2023		YES	source:NCBI_background
+22ER0382	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_049249555.1_GCA_049249555.1_PDT002655192.1_genomic.fna	GCA_049249555.1	SAMN44062743	50	New Zealand	2022		YES	source:NCBI_background
+22ER0375	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_049249515.1_GCA_049249515.1_PDT002655193.1_genomic.fna	GCA_049249515.1	SAMN44062742	50	New Zealand	2022		YES	source:NCBI_background
+22ER0323	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_049249475.1_GCA_049249475.1_PDT002655194.1_genomic.fna	GCA_049249475.1	SAMN44062741	50	New Zealand	2022		YES	source:NCBI_background
+22ER0322	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_049249495.1_GCA_049249495.1_PDT002655195.1_genomic.fna	GCA_049249495.1	SAMN44062740	50	New Zealand	2022		YES	source:NCBI_background
+22ER0321	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_049249455.1_GCA_049249455.1_PDT002655196.1_genomic.fna	GCA_049249455.1	SAMN44062739	50	New Zealand	2022		YES	source:NCBI_background
+22ER0252	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_049249415.1_GCA_049249415.1_PDT002655198.1_genomic.fna	GCA_049249415.1	SAMN44062737	50	New Zealand	2022		YES	source:NCBI_background
+22ER0250	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_049249395.1_GCA_049249395.1_PDT002655199.1_genomic.fna	GCA_049249395.1	SAMN44062736	50	New Zealand	2022		YES	source:NCBI_background
+22ER0249	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_049249375.1_GCA_049249375.1_PDT002655200.1_genomic.fna	GCA_049249375.1	SAMN44062735	50	New Zealand	2022		YES	source:NCBI_background
+22ER0247	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_049249315.1_GCA_049249315.1_PDT002655203.1_genomic.fna	GCA_049249315.1	SAMN44062733	50	New Zealand	2022		YES	source:NCBI_background
+22ER0246	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_049249295.1_GCA_049249295.1_PDT002655204.1_genomic.fna	GCA_049249295.1	SAMN44062732	50	New Zealand	2022		YES	source:NCBI_background
+22ER0245	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_049249275.1_GCA_049249275.1_PDT002655205.1_genomic.fna	GCA_049249275.1	SAMN44062731	50	New Zealand	2022		YES	source:NCBI_background
+22ER0243	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_049249255.1_GCA_049249255.1_PDT002655206.1_genomic.fna	GCA_049249255.1	SAMN44062730	50	New Zealand	2022		YES	source:NCBI_background
+22ER0242	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_049249235.1_GCA_049249235.1_PDT002655207.1_genomic.fna	GCA_049249235.1	SAMN44062729	50	New Zealand	2022		YES	source:NCBI_background
+22ER0241	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_049249215.1_GCA_049249215.1_PDT002655208.1_genomic.fna	GCA_049249215.1	SAMN44062728	50	New Zealand	2022		YES	source:NCBI_background
+22ER0210	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_049249195.1_GCA_049249195.1_PDT002655209.1_genomic.fna	GCA_049249195.1	SAMN44062727	50	New Zealand	2022		YES	source:NCBI_background
+22ER0209	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_049249175.1_GCA_049249175.1_PDT002655210.1_genomic.fna	GCA_049249175.1	SAMN44062726	50	New Zealand	2022		YES	source:NCBI_background
+22ER0208	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_049248895.1_GCA_049248895.1_PDT002655211.1_genomic.fna	GCA_049248895.1	SAMN44062725	50	New Zealand	2022		YES	source:NCBI_background
+22ER0207	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_049248875.1_GCA_049248875.1_PDT002655212.1_genomic.fna	GCA_049248875.1	SAMN44062724	50	New Zealand	2022		YES	source:NCBI_background
+24ER1709	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_049028015.1_GCA_049028015.1_PDT002655256.1_genomic.fna	GCA_049028015.1	SAMN44062812	50	New Zealand	2024		YES	source:NCBI_background
+22ER2079	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_049027445.1_GCA_049027445.1_PDT002655261.1_genomic.fna	GCA_049027445.1	SAMN44062764	50	New Zealand	2022		YES	source:NCBI_background
+22ER1392	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_049027185.1_GCA_049027185.1_PDT002655267.1_genomic.fna	GCA_049027185.1	SAMN44062759	50	New Zealand	2022		YES	source:NCBI_background
+22ER1364	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_049027085.1_GCA_049027085.1_PDT002655268.1_genomic.fna	GCA_049027085.1	SAMN44062758	50	New Zealand	2022		YES	source:NCBI_background
+22ER1320	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_049027125.1_GCA_049027125.1_PDT002655269.1_genomic.fna	GCA_049027125.1	SAMN44062757	50	New Zealand	2022		YES	source:NCBI_background
+22ER1252	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_049026985.1_GCA_049026985.1_PDT002655271.1_genomic.fna	GCA_049026985.1	SAMN44062755	50	New Zealand	2022		YES	source:NCBI_background
+22ER1171	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_049268785.1_GCA_049268785.1_PDT002655274.1_genomic.fna	GCA_049268785.1	SAMN44062753	50	New Zealand	2022		YES	source:NCBI_background
+22ER0834	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_049268765.1_GCA_049268765.1_PDT002655275.1_genomic.fna	GCA_049268765.1	SAMN44062752	50	New Zealand	2022		YES	source:NCBI_background
+22ER0591	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_049268725.1_GCA_049268725.1_PDT002655277.1_genomic.fna	GCA_049268725.1	SAMN44062750	50	New Zealand	2022		YES	source:NCBI_background
+22ER0573	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_049268705.1_GCA_049268705.1_PDT002655278.1_genomic.fna	GCA_049268705.1	SAMN44062749	50	New Zealand	2022		YES	source:NCBI_background
+22ER0500	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_049268665.1_GCA_049268665.1_PDT002655280.1_genomic.fna	GCA_049268665.1	SAMN44062747	50	New Zealand	2022		YES	source:NCBI_background
+22ER0498	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_049904445.1_GCA_049904445.1_PDT002655281.1_genomic.fna	GCA_049904445.1	SAMN44062746	50	New Zealand	2022		YES	source:NCBI_background
+22ER0471	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_049268645.1_GCA_049268645.1_PDT002655282.1_genomic.fna	GCA_049268645.1	SAMN44062745	50	New Zealand	2022		YES	source:NCBI_background
+22ER0206	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_049268625.1_GCA_049268625.1_PDT002655283.1_genomic.fna	GCA_049268625.1	SAMN44062723	50	New Zealand	2022		YES	source:NCBI_background
+22ER0188	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_049268605.1_GCA_049268605.1_PDT002655284.1_genomic.fna	GCA_049268605.1	SAMN44062722	50	New Zealand	2022		YES	source:NCBI_background
+22ER0187	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_049268585.1_GCA_049268585.1_PDT002655285.1_genomic.fna	GCA_049268585.1	SAMN44062721	50	New Zealand	2022		YES	source:NCBI_background
+22ER0185	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_049267465.1_GCA_049267465.1_PDT002655286.1_genomic.fna	GCA_049267465.1	SAMN44062720	50	New Zealand	2022		YES	source:NCBI_background
+22ER0135	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_049268565.1_GCA_049268565.1_PDT002655287.1_genomic.fna	GCA_049268565.1	SAMN44062719	50	New Zealand	2022		YES	source:NCBI_background
+22ER0089	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_049267445.1_GCA_049267445.1_PDT002655288.1_genomic.fna	GCA_049267445.1	SAMN44062718	50	New Zealand	2022		YES	source:NCBI_background
+22ER0069	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_049267405.1_GCA_049267405.1_PDT002655290.1_genomic.fna	GCA_049267405.1	SAMN44062716	50	New Zealand	2022		YES	source:NCBI_background
+21ER4493	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_049267385.1_GCA_049267385.1_PDT002655291.1_genomic.fna	GCA_049267385.1	SAMN44062715	50	New Zealand	2021		YES	source:NCBI_background
+21ER4351	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_049267325.1_GCA_049267325.1_PDT002655294.1_genomic.fna	GCA_049267325.1	SAMN44062713	50	New Zealand	2021		YES	source:NCBI_background
+21ER4289	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_049267305.1_GCA_049267305.1_PDT002655295.1_genomic.fna	GCA_049267305.1	SAMN44062712	50	New Zealand	2021		YES	source:NCBI_background
+21ER4253	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_049267245.1_GCA_049267245.1_PDT002655298.1_genomic.fna	GCA_049267245.1	SAMN44062709	50	New Zealand	2021		YES	source:NCBI_background
+21ER4169	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_049267225.1_GCA_049267225.1_PDT002655299.1_genomic.fna	GCA_049267225.1	SAMN44062708	50	New Zealand	2021		YES	source:NCBI_background
+21ER4144	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_049026865.1_GCA_049026865.1_PDT002655300.1_genomic.fna	GCA_049026865.1	SAMN44062707	50	New Zealand	2021		YES	source:NCBI_background
+25ER1194	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_050087935.1_GCA_050087935.1_PDT002746887.1_genomic.fna	GCA_050087935.1	SAMN48287654	50	New Zealand	2025		YES	source:NCBI_background
+25ER1001	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_050087815.1_GCA_050087815.1_PDT002746892.1_genomic.fna	GCA_050087815.1	SAMN48287650	50	New Zealand	2025		YES	source:NCBI_background
+25ER0680	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_050087795.1_GCA_050087795.1_PDT002746895.1_genomic.fna	GCA_050087795.1	SAMN48287647	50	New Zealand	2025		YES	source:NCBI_background
+25ER2037	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_051123905.1_GCA_051123905.1_PDT002816404.1_genomic.fna	GCA_051123905.1	SAMN49683325	50	New Zealand	2025		YES	source:NCBI_background
+25ER2006	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_051124165.1_GCA_051124165.1_PDT002816405.1_genomic.fna	GCA_051124165.1	SAMN49683324	50	New Zealand	2025		YES	source:NCBI_background
+25ER1988	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_051124145.1_GCA_051124145.1_PDT002816406.1_genomic.fna	GCA_051124145.1	SAMN49683323	50	New Zealand	2025		YES	source:NCBI_background
+25ER1979	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_051124125.1_GCA_051124125.1_PDT002816407.1_genomic.fna	GCA_051124125.1	SAMN49683322	50	New Zealand	2025		YES	source:NCBI_background
+25ER4026	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_053754365.1_GCA_053754365.1_PDT003001225.1_genomic.fna	GCA_053754365.1	SAMN53471926	50	New Zealand	2025		YES	source:NCBI_background
+25ER2187	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_053754345.1_GCA_053754345.1_PDT003001226.1_genomic.fna	GCA_053754345.1	SAMN53471925	50	New Zealand	2025		YES	source:NCBI_background
+25ER4563	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_053881955.1_GCA_053881955.1_PDT003017326.1_genomic.fna	GCA_053881955.1	SAMN53798990	50	New Zealand	2025		YES	source:NCBI_background
+25ER4745	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_054145465.1_GCA_054145465.1_PDT003035096.1_genomic.fna	GCA_054145465.1	SAMN54270094	50	New Zealand	2025		YES	source:NCBI_background
+25ER4649	ST50	data/raw/ncbi_assemblies_flat/ncbi_2019_background/GCA_054145445.1_GCA_054145445.1_PDT003035097.1_genomic.fna	GCA_054145445.1	SAMN54270093	50	New Zealand	2025		YES	source:NCBI_background
+21ER0954	ST50	/powerplant/output/genomic/bacterial/Vibrio/vibrio_genomics/genomes/assembled/21ER0954_S34_assembly.fna	GCA_049031475.1	SAMN44062695	50	New Zealand	2021		YES	source:PFR_local
