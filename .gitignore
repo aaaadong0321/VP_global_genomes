@@ -1,15 +1,22 @@
-# Raw NCBI metadata packages (too large for GitHub)
-data/raw/ncbi_vp_metadata_package/
-data/raw/ncbi_vp_metadata.tsv
-data/raw/ncbi_assembly_packages/
-data/raw/ncbi_assemblies/
-
-# Genome files
+# 大比对/基因组 - 绝不推
+results/core_snp/*.fasta
+results/core_snp/positions.tsv
+data/all_genomes/
+data/raw/
 *.fna
 *.fasta
-*.fas
-*.fastq
-*.fastq.gz
-*.zip
-*.bam
-*.vcf
+*.aln
+# 大日志
+*.fastlog
+*.slurm.log
+*_%j.log
+*.log
+# QC 大输出(CheckM2 DIAMOND)
+results/qc/checkm2/
+# 中间文件
+*.snps
+*.coords
+*.delta
+# 编译产物
+FastTreeMP_sp
+FastTree.c
